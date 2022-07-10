@@ -1,8 +1,10 @@
 * {
   box-sizing: border-box;
+  font-family: 'Heebo', sans-serif;
+
 }
 body{
-  background-color: blueviolet;
+  background-image: url("./images/background1.jpg");
 }
 .menu {
   float: left;
@@ -36,7 +38,7 @@ body{
 
 @media only screen and (max-width: 620px) {
   /* For mobile phones: */
-  .menu, .main, .right {
+  .menu, .right , .main  {
     width: 100%;
   }
 }
