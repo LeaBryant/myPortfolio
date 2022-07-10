@@ -6,6 +6,9 @@
 body{
   background-image: url("./images/background1.jpg");
 }
+img {
+  border-radius: 50%;
+}
 .menu {
   float: left;
   width: 20%;
