@@ -1,95 +1,42 @@
 * {
   box-sizing: border-box;
 }
-
-body {
-  font-size: 30px;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  font-family: 'Julius Sans One', sans-serif;
-  padding: 20px;
+body{
+  background-color: blueviolet;
 }
-
-/* Center website */
-.main {
-  max-width: 1000px;
-  margin: auto;
-}
-
-h1 h3 {
-  text-align: center;
-  font-size: 50px;
-  word-break: break-all;
-}
-
-.row {
-  margin: 8px;
-}
-
-main {
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
-}
-
-.avatar {
-  vertical-align: middle;
-  width: 70px;
-  height: 70px;
-  border-radius: 70%;
-}
-
-.Portfolio{
-  text-align: center;
-}
-
-/* Add padding BETWEEN each column (if you want) */
-.row,
-.row > .column {
-  padding: 8px;
-}
-
-/* Create four equal columns that floats next to each other */
-.column {
+.menu {
   float: left;
-  width: 25%;
+  width: 20%;
+  text-align: center;
 }
 
-/* Clear floats after rows */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.menu a {
+  background-color: black;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: whitesmoke;
 }
 
-/* Content */
-.content {
-  background-color: #886D76;
-  padding: 80px;
-  text-decoration: underline;
-
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-  .column {
-    width: 60%;
-  }
+.right {
+  background-color: black;
+  float: left;
+  width: 20%;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: center;
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
     width: 100%;
   }
 }
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;}
-
-  .fa-instagram {
-    background: #125688;
-    color: white;
-  }
