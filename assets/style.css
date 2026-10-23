@@ -2338,3 +2338,65 @@ footer > a:not(.wordmark):hover {
     animation: none !important;
   }
 }
+/* ========================================
+   DAZZLE DRY FEATURED CASE STUDY
+   ======================================== */
+/* DAZZLE DRY IMAGE GALLERY */
+
+.dazzle-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: start;
+    gap: 35px 24px;
+  }
+  
+  .dazzle-gallery figure {
+    min-width: 0;
+    margin: 0;
+  }
+  
+  .dazzle-gallery a {
+    display: block;
+    overflow: hidden;
+    border-radius: 5px;
+    background: var(--sage, #e9ecdd);
+  }
+  
+  .dazzle-gallery img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .dazzle-gallery figcaption {
+    padding-top: 14px;
+  }
+  
+  .dazzle-gallery figcaption strong {
+    display: block;
+    color: var(--ink, #252923);
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.6;
+  }
+  
+  .dazzle-gallery figcaption span {
+    display: block;
+    margin-top: 5px;
+    color: var(--muted, #64675e);
+    font-size: 12px;
+    line-height: 1.7;
+  }
+  
+  @media (max-width: 950px) {
+    .dazzle-gallery {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .dazzle-gallery {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+  }
