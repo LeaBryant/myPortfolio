@@ -8,59 +8,37 @@
     content="width=device-width, initial-scale=1"
   >
 
-  <title>Lea Bryant | My Story, Still Unfolding</title>
+  <title>Lea Bryant | Storyteller, Strategist &amp; Creative</title>
 
   <meta
     name="description"
-    content="Kansas-born. Arizona-raised. Nashville-based. Meet Lea Bryant: storyteller, digital content leader, developer, photography enthusiast, and lifelong learner."
+    content="Kansas-born. Arizona-raised. Nashville-based. Explore Lea Bryant’s story and work in journalism, digital content, photography, and web development."
   >
 
-  <!-- Your complete CSS file -->
-  <link rel="stylesheet" href="./assets/style.css?v=4">
+  <link rel="stylesheet" href="./assets/style.css?v=6">
 
-  <!-- Your existing interactive tabs and filters -->
-  <script src="./app.js?v=4" defer></script>
+  <script src="./app.js?v=6" defer></script>
 
-  <!-- Empty sample spaces until your photographs and PDFs are added -->
   <style>
-    .photo-placeholder {
-      display: grid;
-      min-height: 265px;
-      padding: 25px;
-      place-items: center;
-      border: 1px dashed #b8bda9;
-      border-radius: 5px;
-      background: #e9ecdd;
-      color: #555f3a;
-      font: italic 20px / 1.5 Georgia, serif;
-      text-align: center;
+    .career-history {
+      margin-top: 35px;
     }
 
-    .photo-item-tall .photo-placeholder {
-      min-height: 565px;
+    .career-history > summary {
+      font-size: 14px;
+      font-weight: 600;
     }
 
-    .sample-placeholder {
-      color: #64675e;
-      font: italic 20px / 1.5 Georgia, serif;
-      text-align: center;
+    .journalism > .case-reel {
+      margin-top: 50px;
     }
 
-    .sample-coming-soon {
-      display: block;
-      margin-top: 22px;
-      padding-top: 16px;
-      border-top: 1px solid #d4d5c9;
-      color: #64675e;
-      font-size: 12px;
+    .work-grid {
+      align-items: start;
     }
 
-    @media (max-width: 640px) {
-      .photo-placeholder,
-      .photo-item-tall .photo-placeholder {
-        min-height: 0;
-        aspect-ratio: 3 / 4;
-      }
+    .career-list {
+      margin-top: 10px;
     }
   </style>
 </head>
@@ -68,10 +46,7 @@
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
-  <!-- =====================================
-       HEADER
-       ===================================== -->
-
+  <!-- HEADER -->
   <header>
     <a class="wordmark" href="#">
       lea bryant<span aria-hidden="true">✳</span>
@@ -79,8 +54,8 @@
 
     <nav aria-label="Main navigation">
       <a href="#story">My story</a>
+      <a href="#work-samples">My work</a>
       <a href="#journalism">Journalism</a>
-      <a href="#work">Work</a>
       <a href="#education">Education</a>
 
       <a class="nav-contact" href="#contact">
@@ -91,10 +66,7 @@
 
   <main id="main">
 
-    <!-- =====================================
-         HERO
-         ===================================== -->
-
+    <!-- HERO -->
     <section class="hero">
       <div class="hero-copy">
         <div class="eyebrow">
@@ -103,33 +75,32 @@
         </div>
 
         <h1>
-          A curious mind.<br>
-          A story <em>still unfolding.</em>
+          A storyteller.<br>
+          A strategist.<br>
+          <em>Always curious.</em>
         </h1>
 
         <p class="intro">
-          I’m Lea Bryant. A storyteller, strategist, and builder,
-          with a love of photography and something new to learn.
-          <strong>
-            Every chapter has shaped what I bring to the next.
-          </strong>
+          I’m Lea Bryant. My work connects journalism,
+          digital content, and technology. Photography
+          and coding give me even more ways to create.
         </p>
 
         <div class="hero-actions">
-          <a class="button" href="#story">
-            Get to know me
+          <a class="button" href="#work-samples">
+            Explore my work
             <span aria-hidden="true">↘</span>
           </a>
 
-          <a class="text-link" href="#work-samples">
-            Explore my work ↗
+          <a class="text-link" href="#story">
+            Get to know me ↗
           </a>
         </div>
 
         <div class="roles">
-          STORYTELLER
+          CONTENT LEADER
           <span aria-hidden="true">✳</span>
-          STRATEGIST
+          STORYTELLER
           <span aria-hidden="true">✳</span>
           CREATIVE AT HEART
         </div>
@@ -138,7 +109,7 @@
       <div class="portrait-wrap">
         <div class="portrait">
           <img
-            src="assets/images/Professional Photo.png"
+            src="./assets/images/Professional%20Photo.png"
             alt="Lea Bryant"
             fetchpriority="high"
           >
@@ -152,28 +123,25 @@
         <span class="star" aria-hidden="true">✳</span>
 
         <span class="portrait-index">
-          A LITTLE INTRODUCTION
+          THE PERSON BEHIND THE WORK
         </span>
       </div>
     </section>
 
-    <div class="ticker" aria-label="A few things about me">
+    <div class="ticker" aria-label="Personal interests">
       <span>Rooted in curiosity.</span>
       <span aria-hidden="true">✳</span>
       <span>Raised around sports.</span>
       <span aria-hidden="true">✳</span>
       <span>Always creating.</span>
       <span aria-hidden="true">✳</span>
-      <span>Still becoming.</span>
+      <span>Still learning.</span>
     </div>
 
-    <!-- =====================================
-         MY STORY
-         ===================================== -->
-
+    <!-- MY STORY -->
     <section id="story" class="story section">
       <div class="section-top">
-        <span class="eyebrow">01 / WHERE MY STORY STARTS</span>
+        <span class="eyebrow">MY STORY</span>
 
         <span class="small">
           A little context behind the résumé.
@@ -189,38 +157,38 @@
 
         <div>
           <p class="large">
-            Before the job titles, there was a girl growing up
-            around sports, family, and the desire to learn.
+            Before the job titles, there was a girl growing
+            up around sports, family, and the desire to learn.
           </p>
 
           <p>
-            I was born in Kansas and grew up in Arizona, in a
-            family that loves sports. That part of me didn’t
-            stay in childhood. It followed me into college,
-            into sports media, and into the way I connect
-            with people.
+            I was born in Kansas and grew up in Arizona,
+            in a family that loves sports. At Grambling State
+            University, I studied multimedia journalism and
+            worked as a football equipment manager.
+            Sports became part of both my college experience
+            and my early work in broadcasting.
           </p>
 
           <p>
-            At Grambling State University, I studied multimedia
-            journalism and worked as a football equipment
-            manager. I experienced the stories on the field
-            and the work happening behind the scenes.
+            My career has since taken me through education
+            programs, beauty marketing, and digital content
+            leadership. Along the way, I earned an MBA and
+            learned full-stack web development.
           </p>
 
           <p>
-            Since then, curiosity has taken me through
-            broadcasting, education programs, digital
-            marketing, and technology. These days, the
-            Nashville area is home. The questions, ideas,
-            and love of learning are still coming with me.
+            Photography and coding remain creative interests
+            I love exploring. Today, the Nashville area is
+            home, and I’m still finding new things to learn
+            and new ways to tell a story.
           </p>
         </div>
       </div>
 
       <div class="places">
         <div>
-          <span>01 / ROOTS</span>
+          <span>ROOTS</span>
           <h3>Kansas</h3>
           <p>Where my story began.</p>
         </div>
@@ -228,7 +196,7 @@
         <span class="place-arrow" aria-hidden="true">↗</span>
 
         <div>
-          <span>02 / GROWING UP</span>
+          <span>GROWING UP</span>
           <h3>Arizona</h3>
           <p>Where I grew up.</p>
         </div>
@@ -236,7 +204,7 @@
         <span class="place-arrow" aria-hidden="true">↗</span>
 
         <div>
-          <span>03 / FINDING MY VOICE</span>
+          <span>FINDING MY VOICE</span>
           <h3>Grambling</h3>
           <p>Journalism, football, and HBCU pride.</p>
         </div>
@@ -244,129 +212,132 @@
         <span class="place-arrow" aria-hidden="true">↗</span>
 
         <div>
-          <span>04 / THIS CHAPTER</span>
+          <span>THIS CHAPTER</span>
           <h3>Nashville</h3>
           <p>Home for what comes next.</p>
         </div>
       </div>
-    </section>
 
-    <!-- =====================================
-         JOURNALISM
-         ===================================== -->
+      <details id="chapters" class="career-history">
+        <summary>
+          Explore my career experience
+          <span aria-hidden="true">+</span>
+        </summary>
 
-    <section id="journalism" class="journalism section">
-      <div class="section-top">
-        <span class="eyebrow">
-          02 / THE STORYTELLING FOUNDATION
-        </span>
+        <div class="career-list">
+          <article>
+            <span class="career-time">2023–PRESENT</span>
 
-        <span class="small">
-          Behind the broadcast. Close to the story.
-        </span>
-      </div>
+            <div>
+              <h3>Digital Content Manager</h3>
 
-      <div class="journalism-layout">
-        <div class="broadcast-cover">
-          <div class="art-top">
-            JOURNALISM &amp; BROADCAST PRODUCTION
-            <span aria-hidden="true">↗</span>
-          </div>
+              <span class="career-org">
+                SVP Worldwide · CREATIVATE™
+              </span>
 
-          <span class="broadcast-symbol" aria-hidden="true">“</span>
+              <p>
+                Leading digital content planning and
+                collaborating across product, marketing,
+                and engineering on a global creative platform.
+              </p>
+            </div>
+          </article>
 
-          <div class="broadcast-title">
-            Find the story.<br>
-            <i>Bring it to life.</i>
-          </div>
-
-          <div class="art-bottom">
-            2015–2017
-            <span>CONTENT PRODUCTION</span>
-          </div>
-        </div>
-
-        <div class="journalism-copy">
-          <h2>
-            My first lens:<br>
-            <em>the human story.</em>
-          </h2>
-
-          <p>
-            Journalism is where my professional storytelling
-            began. Producing digital and broadcast content
-            taught me to work across formats, collaborate
-            under deadline, and think about the people on
-            the other side of the screen.
-          </p>
-
-          <div class="news-affiliations">
-            <span>ESPN</span>
-            <span>Raycom Media</span>
-            <span>CBS affiliate production</span>
-          </div>
-
-          <p>
-            My production experience included local news
-            and sports content, studio cameras, audio,
-            graphics, B-roll, and supporting sports package
-            scripts. I worked with producers and on-air talent
-            to help bring content from the idea stage to
-            the broadcast.
-          </p>
-
-          <div class="tags">
-            <span>Broadcast &amp; digital content</span>
-            <span>Sports storytelling</span>
-            <span>Studio production</span>
-            <span>Social media</span>
-          </div>
-
-          <div class="journalism-note">
-            <span class="eyebrow">
-              WHAT I STILL CARRY WITH ME
+          <article>
+            <span class="career-time">
+              DIGITAL &amp; SOCIAL MARKETING
             </span>
 
-            <p>
-              Ask thoughtful questions. Know your audience.
-              Make the story clear.
-            </p>
-          </div>
+            <div>
+              <h3>Brand content and creative production</h3>
 
-          <div class="hero-actions">
-            <a class="text-link" href="#video-stories">
-              Watch selected stories ↗
-            </a>
-          </div>
+              <span class="career-org">
+                VB Cosmetics · Dazzle Dry
+              </span>
+
+              <p>
+                Social media, digital campaigns, product
+                photography, and video production.
+              </p>
+            </div>
+          </article>
+
+          <article>
+            <span class="career-time">2017–2022</span>
+
+            <div>
+              <h3>Education grants and program coordination</h3>
+
+              <span class="career-org">
+                Federal education programs · Arizona
+              </span>
+
+              <p>
+                Program coordination, reporting, and
+                collaboration with education stakeholders
+                around student access and community needs.
+              </p>
+            </div>
+          </article>
+
+          <article>
+            <span class="career-time">2015–2017</span>
+
+            <div>
+              <h3>Content Producer</h3>
+
+              <span class="career-org">
+                ESPN / Raycom Media · CBS affiliate
+              </span>
+
+              <p>
+                Digital and broadcast production supporting
+                news, sports coverage, and social content.
+              </p>
+            </div>
+          </article>
+
+          <article>
+            <span class="career-time">2013–2016</span>
+
+            <div>
+              <h3>Football Equipment Manager</h3>
+
+              <span class="career-org">
+                Grambling State University
+              </span>
+
+              <p>
+                Equipment, uniforms, travel preparation,
+                and day-to-day football operations.
+              </p>
+            </div>
+          </article>
         </div>
-      </div>
+      </details>
     </section>
 
-    <!-- =====================================
-         THE MANY HATS
-         ===================================== -->
-
+    <!-- THE MANY HATS -->
     <section id="hats" class="hats section">
       <div class="section-top">
-        <span class="eyebrow">03 / THE MANY HATS</span>
+        <span class="eyebrow">THE MANY HATS</span>
 
         <span class="small">
-          Different disciplines. One connected perspective.
+          Different experiences. A connected perspective.
         </span>
       </div>
 
       <h2>
-        I don’t fit in one box.<br>
-        <em>That’s the advantage.</em>
+        The perspectives<br>
+        <em>I bring to the work.</em>
       </h2>
 
       <div class="hat-layout">
         <div>
           <p class="section-intro">
-            Journalism, business, technology, and creativity
-            each give me a different way to approach the
-            same challenge. Choose a hat to explore
-            the connections.
+            My experience connects creative thinking
+            with business goals and technical execution.
+            Choose a hat to explore how I approach the work.
           </p>
 
           <div
@@ -467,250 +438,84 @@
       </div>
     </section>
 
-    <!-- =====================================
-         SELECTED WORK
-         ===================================== -->
-
+    <!-- CURRENT WORK & DEVELOPMENT -->
     <section id="work" class="work section">
       <div class="section-top">
-        <span class="eyebrow">04 / SELECTED WORK</span>
+        <span class="eyebrow">
+          CURRENT WORK &amp; DEVELOPMENT
+        </span>
 
         <span class="small">
-          From the big idea to the details.
+          Content leadership and the things I build.
         </span>
       </div>
 
       <div class="work-heading">
         <h2>
-          Many hats.<br>
-          <em>Meaningful work.</em>
+          What I do.<br>
+          <em>What I build.</em>
         </h2>
-
-        <div class="filters" aria-label="Filter work">
-          <button
-            type="button"
-            class="active"
-            data-filter="all"
-            aria-pressed="true"
-          >
-            All work
-          </button>
-
-          <button
-            type="button"
-            data-filter="strategy"
-            aria-pressed="false"
-          >
-            Strategy &amp; content
-          </button>
-
-          <button
-            type="button"
-            data-filter="development"
-            aria-pressed="false"
-          >
-            Development
-          </button>
-        </div>
       </div>
 
       <div class="work-grid">
-        <article
-          class="project featured"
-          data-category="strategy"
-        >
+        <article class="project">
           <div class="project-art art-creativate">
             <div class="art-top">
-              CONTENT · COMMUNITY · CREATIVITY
+              DIGITAL CONTENT &amp; STRATEGY
               <span aria-hidden="true">↗</span>
             </div>
 
             <div class="creative-word">
-              Make room<br>
-              for <i>possibility.</i>
+              Supporting<br>
+              <i>creative journeys.</i>
             </div>
 
             <div class="art-bottom">
               CREATIVATE™
-              <span>CONTENT LEADERSHIP</span>
+              <span>SVP WORLDWIDE</span>
             </div>
           </div>
 
           <div class="project-meta">
-            <span>DIGITAL CONTENT &amp; STRATEGY</span>
-            <span>SVP WORLDWIDE</span>
+            <span>CURRENT ROLE</span>
+            <span>DIGITAL CONTENT MANAGER</span>
           </div>
 
-          <h3>
-            Connecting creativity with the digital experience.
-          </h3>
+          <h3>Connecting content with the digital experience.</h3>
 
           <p>
-            Content leadership across CREATIVATE’s creative
-            ecosystem, bringing together educational content,
-            projects, membership messaging, and
-            cross-functional collaboration.
+            At SVP Worldwide, I work across CREATIVATE’s
+            content experience, connecting educational
+            content, projects, and membership messaging.
           </p>
 
           <details>
             <summary>
-              Explore my contribution
+              My responsibilities
               <span aria-hidden="true">+</span>
             </summary>
 
             <div class="detail-content">
-              <h4>The focus</h4>
-
               <p>
-                Help people understand what they can create
-                and find a clear next step across a connected
-                digital platform.
+                Editorial planning, website messaging,
+                stakeholder coordination, and content
+                alignment across sewing, quilting,
+                embroidery, and garments.
               </p>
 
-              <h4>My contribution</h4>
-
               <p>
-                Digital content planning, stakeholder
-                coordination, website messaging, and alignment
-                across sewing, quilting, embroidery,
-                and garment content.
-              </p>
-
-              <div class="tags">
-                <span>Content leadership</span>
-                <span>Digital experience</span>
-                <span>Collaboration</span>
-              </div>
-            </div>
-          </details>
-        </article>
-
-        <article class="project" data-category="strategy">
-          <div class="project-art art-journey">
-            <span class="eyebrow">
-              CUSTOMER EXPERIENCE / SEWING
-            </span>
-
-            <div class="journey-title">
-              A little curiosity.<br>
-              A lot of <i>possibility.</i>
-            </div>
-
-            <div class="journey-path">
-              <span>Discover</span>
-              <b aria-hidden="true">→</b>
-              <span>Learn</span>
-              <b aria-hidden="true">→</b>
-              <span>Create</span>
-            </div>
-
-            <span class="art-foot">
-              BEGINNER JOURNEY · STRATEGIC FOCUS
-            </span>
-          </div>
-
-          <div class="project-meta">
-            <span>CUSTOMER JOURNEY</span>
-            <span>STRATEGY</span>
-          </div>
-
-          <h3>
-            Turning “I wish I could” into “I made this.”
-          </h3>
-
-          <p>
-            A beginner sewing focus connecting approachable
-            education, inspiring projects, and a path toward
-            deeper engagement.
-          </p>
-
-          <details>
-            <summary>
-              Explore the approach
-              <span aria-hidden="true">+</span>
-            </summary>
-
-            <div class="detail-content">
-              <h4>The opportunity</h4>
-
-              <p>
-                New sewists need confidence as much as
-                inspiration. Every next step should
-                feel achievable.
-              </p>
-
-              <h4>My focus</h4>
-
-              <p>
-                Map the learning journey, connect skills to
-                useful projects, and build content progression
-                that supports confidence and
-                membership discovery.
-              </p>
-
-              <p class="small">
-                Strategic work in development.
+                My sewing work also includes planning
+                approachable learning and project experiences
+                for beginners.
               </p>
             </div>
           </details>
         </article>
 
-        <article class="project" data-category="development">
-          <div class="project-art art-connect">
-            <div class="browser-bar">
-              <i aria-hidden="true"></i>
-              <i aria-hidden="true"></i>
-              <i aria-hidden="true"></i>
-              <span>DEVELOPMENT PROJECT</span>
-            </div>
-
-            <div class="connect-demo">
-              <div class="connect-mark" aria-hidden="true">
-                c<span>↗</span>
-              </div>
-
-              <h4>connectable.</h4>
-              <span>Ideas become experiences.</span>
-
-              <div class="mock-lines" aria-hidden="true">
-                <i></i>
-                <i></i>
-                <i></i>
-              </div>
-            </div>
-
-            <span class="art-foot">
-              CONCEPTUAL PROJECT COVER
-            </span>
-          </div>
-
-          <div class="project-meta">
-            <span>COLLABORATIVE DEVELOPMENT</span>
-            <span>WEB APPLICATION</span>
-          </div>
-
-          <h3>Connectable</h3>
-
-          <p>
-            A collaborative web application project from my
-            development portfolio. A look at the builder
-            behind the strategy.
-          </p>
-
-          <a
-            class="project-link"
-            href="https://github.com/LeaBryant/connect-able"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Explore the repository ↗
-          </a>
-        </article>
-
-        <article class="project" data-category="development">
+        <article class="project">
           <div class="project-art art-code">
             <span class="eyebrow">
-              THE FOUNDATION / WEB DEVELOPMENT
+              WEB DEVELOPMENT
             </span>
 
             <div class="code-art" aria-hidden="true">
@@ -726,27 +531,33 @@
           </div>
 
           <div class="project-meta">
-            <span>DEVELOPMENT ARCHIVE</span>
-            <span>FRONT-END</span>
+            <span>CREATIVE &amp; TECHNICAL WORK</span>
+            <span>DEVELOPMENT PROJECTS</span>
           </div>
 
-          <h3>
-            Built with curiosity. Refined through practice.
-          </h3>
+          <h3>Learning through building.</h3>
 
           <p>
-            Earlier projects exploring interactive applications,
-            accessible web structure, and problem-solving
-            through code.
+            Coding is a skill and a creative outlet.
+            My development projects explore interactive
+            applications and problem-solving for the web.
           </p>
 
           <details>
             <summary>
-              Browse development projects
+              Browse my projects
               <span aria-hidden="true">+</span>
             </summary>
 
             <div class="archive-links">
+              <a
+                href="https://github.com/LeaBryant/connect-able"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Connectable · collaborative application ↗
+              </a>
+
               <a
                 href="https://krsparks2.github.io/salutations/"
                 target="_blank"
@@ -784,219 +595,472 @@
       </div>
     </section>
 
-    <!-- =====================================
-         HOW I WORK
-         ===================================== -->
+    <!-- DAZZLE DRY WORK SAMPLES -->
+    <section id="work-samples" class="portfolio-section">
+      <span id="dazzle-dry" aria-hidden="true"></span>
 
-    <section class="approach section">
-      <span class="eyebrow">05 / HOW I WORK</span>
+      <div class="portfolio-section-heading">
+        <div>
+          <span class="eyebrow">
+            A CLOSER LOOK AT MY WORK
+          </span>
 
-      <div class="approach-heading">
-        <h2>
-          Curious by nature.<br>
-          <em>Intentional by design.</em>
-        </h2>
+          <h2>
+            My work at<br>
+            <em>Dazzle Dry.</em>
+          </h2>
+        </div>
 
         <p>
-          I bring the right questions, connect the right
-          people, and stay close enough to the details
-          to move the work forward.
+          At VB Cosmetics, I worked across digital marketing
+          and creative production for Dazzle Dry. These
+          samples include product launch photography,
+          video I created, shot, and edited, and
+          social channel results.
         </p>
       </div>
 
-      <div class="steps">
-        <div>
-          <span>01 — UNDERSTAND</span>
-          <h3>Ask better questions.</h3>
-
-          <p>
-            Start with the audience, the challenge, and
-            what success needs to look like.
-          </p>
-        </div>
-
-        <div>
-          <span>02 — CONNECT</span>
-          <h3>Make the pieces fit.</h3>
-
-          <p>
-            Bring story, business goals, and the digital
-            experience into a shared direction.
-          </p>
-        </div>
-
-        <div>
-          <span>03 — MAKE</span>
-          <h3>Turn thinking into doing.</h3>
-
-          <p>
-            Build the plan, shape the content, collaborate,
-            and refine the experience.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- =====================================
-         CAREER JOURNEY
-         ===================================== -->
-
-    <section id="chapters" class="chapters section">
-      <div class="section-top">
-        <span class="eyebrow">
-          06 / THE CHAPTERS THAT CONNECT
-        </span>
-
-        <span class="small">
-          Different settings. A growing perspective.
-        </span>
+      <div class="tags">
+        <span>Social media</span>
+        <span>Video production</span>
+        <span>Filming &amp; editing</span>
+        <span>Product photography</span>
+        <span>Paid advertising</span>
       </div>
 
-      <h2>
-        No single job title<br>
-        <em>tells the whole story.</em>
-      </h2>
-
-      <div class="career-list">
+      <!-- REPORTED RESULTS -->
+      <div
+        class="case-results"
+        aria-label="Historical results reported in my work presentation"
+      >
         <article>
-          <span class="career-time">2023–PRESENT</span>
+          <span class="eyebrow">INSTAGRAM</span>
 
-          <div>
-            <h3>Digital content leadership</h3>
+          <p class="case-number">+2.75%</p>
 
-            <span class="career-org">
-              SVP Worldwide · CREATIVATE™
-            </span>
+          <h3>Follower growth</h3>
 
-            <p>
-              Bringing editorial planning, digital experiences,
-              and global collaboration together around creative
-              content. Partnering across product, marketing,
-              and engineering to connect content with the
-              experiences people use.
-            </p>
-          </div>
-
-          <span class="career-number" aria-hidden="true">05</span>
+          <p>
+            Over the three-month reporting period.
+          </p>
         </article>
 
         <article>
-          <span class="career-time">
-            BEAUTY &amp; BRAND MARKETING
+          <span class="eyebrow">TIKTOK</span>
+
+          <p class="case-number">+15.1%</p>
+
+          <h3>Follower growth</h3>
+
+          <p>
+            Over the three-month reporting period.
+          </p>
+        </article>
+
+        <article>
+          <span class="eyebrow">FACEBOOK</span>
+
+          <p class="case-number">15%+</p>
+
+          <h3>Growth in followers and likes</h3>
+
+          <p>
+            Reported since I began working on the page.
+          </p>
+        </article>
+
+        <article>
+          <span class="eyebrow">YOUTUBE</span>
+
+          <p class="case-number">+52%</p>
+
+          <h3>Channel views</h3>
+
+          <p>
+            Increase attributed to paid ads over 28 days.
+          </p>
+        </article>
+      </div>
+
+      <p class="case-reporting-note">
+        Historical results from my work presentation.
+        Each platform reflects its own reporting period.
+      </p>
+
+      <!-- ONE FEATURED VIDEO -->
+      <div class="case-reel">
+        <div class="case-reel-heading">
+          <span class="eyebrow">VIDEO PRODUCTION</span>
+
+          <h3>Created, shot, and edited by me.</h3>
+
+          <p>
+            A sample of my product video work for Dazzle Dry.
+          </p>
+        </div>
+
+        <video
+          class="case-video"
+          controls
+          playsinline
+          preload="metadata"
+          aria-label="Dazzle Dry video work sample by Lea Bryant"
+        >
+          <source
+            src="./assets/videos/dazzle-dry-sample.mp4"
+            type="video/mp4"
+          >
+
+          Your browser does not support embedded video.
+
+          <a href="./assets/videos/dazzle-dry-sample.mp4">
+            Open the video sample.
+          </a>
+        </video>
+      </div>
+
+      <!-- SIX IMAGE SAMPLES -->
+      <div id="photography" class="case-reel">
+        <div class="case-reel-heading">
+          <span class="eyebrow">
+            PHOTOGRAPHY &amp; VIDEO STILLS
           </span>
 
-          <div>
-            <h3>Building a brand’s digital presence</h3>
+          <h3>The finished work and a look behind the scenes.</h3>
 
-            <span class="career-org">
-              VB Cosmetics · Dazzle Dry
-            </span>
+          <p>
+            Select any image to view it at full size.
+          </p>
+        </div>
 
-            <p>
-              Digital and social content, campaigns, influencer
-              partnerships, and the connection between brand
-              storytelling and audience engagement.
-            </p>
-          </div>
+        <div class="dazzle-gallery">
+          <figure>
+            <a
+              href="./assets/samples/dazzle-launch-yellow.jpg"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View yellow product launch photograph"
+            >
+              <img
+                src="./assets/samples/dazzle-launch-yellow.jpg"
+                alt="Dazzle Dry nail lacquers on white display forms against a yellow background"
+                loading="lazy"
+                decoding="async"
+              >
+            </a>
 
-          <span class="career-number" aria-hidden="true">04</span>
-        </article>
+            <figcaption>
+              <strong>Product launch photography</strong>
+              <span>Yellow backdrop and product styling.</span>
+            </figcaption>
+          </figure>
 
-        <article>
-          <span class="career-time">2017–2022</span>
+          <figure>
+            <a
+              href="./assets/samples/dazzle-launch-pastel.jpg"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View pastel product launch photograph"
+            >
+              <img
+                src="./assets/samples/dazzle-launch-pastel.jpg"
+                alt="Dazzle Dry nail lacquers on clear display blocks with pastel lighting"
+                loading="lazy"
+                decoding="async"
+              >
+            </a>
 
-          <div>
-            <h3>Programs with a community purpose</h3>
+            <figcaption>
+              <strong>Product launch photography</strong>
+              <span>Pastel lighting and clear display blocks.</span>
+            </figcaption>
+          </figure>
 
-            <span class="career-org">
-              Federal education programs · Arizona
-            </span>
+          <figure>
+            <a
+              href="./assets/samples/dazzle-behind-the-scenes.jpg"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View behind-the-scenes production photograph"
+            >
+              <img
+                src="./assets/samples/dazzle-behind-the-scenes.jpg"
+                alt="Product shoot setup with a camera, lighting, and tabletop scene"
+                loading="lazy"
+                decoding="async"
+              >
+            </a>
 
-            <p>
-              Work across education grants, program coordination,
-              reporting, and stakeholder collaboration, connecting
-              data and operations with student access and
-              community needs.
-            </p>
-          </div>
+            <figcaption>
+              <strong>Behind the scenes</strong>
+              <span>The setup behind the finished content.</span>
+            </figcaption>
+          </figure>
 
-          <span class="career-number" aria-hidden="true">03</span>
-        </article>
+          <figure>
+            <a
+              href="./assets/samples/dazzle-ad-still.jpg"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View advertising video still"
+            >
+              <img
+                src="./assets/samples/dazzle-ad-still.jpg"
+                alt="Advertising video still showing a product pouring with the words One Coat"
+                loading="lazy"
+                decoding="async"
+              >
+            </a>
 
-        <article>
-          <span class="career-time">2015–2017</span>
+            <figcaption>
+              <strong>Advertising video still</strong>
+              <span>From content I created, shot, and edited.</span>
+            </figcaption>
+          </figure>
 
-          <div>
-            <h3>Bringing stories to the screen</h3>
+          <figure>
+            <a
+              href="./assets/samples/dazzle-application-still.jpg"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View product application video still"
+            >
+              <img
+                src="./assets/samples/dazzle-application-still.jpg"
+                alt="Two close-up views of nail product application"
+                loading="lazy"
+                decoding="async"
+              >
+            </a>
 
-            <span class="career-org">
-              ESPN / Raycom Media · CBS affiliate
-            </span>
+            <figcaption>
+              <strong>Product demonstration video still</strong>
+              <span>A close-up of the application process.</span>
+            </figcaption>
+          </figure>
 
-            <p>
-              Digital and broadcast production supporting news,
-              live sports coverage, and content across
-              social platforms.
-            </p>
-          </div>
+          <figure>
+            <a
+              href="./assets/samples/dazzle-finish-still.jpg"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View product finish video still"
+            >
+              <img
+                src="./assets/samples/dazzle-finish-still.jpg"
+                alt="A bare nail beside a nail with a pearl-colored finish"
+                loading="lazy"
+                decoding="async"
+              >
+            </a>
 
-          <span class="career-number" aria-hidden="true">02</span>
-        </article>
-
-        <article>
-          <span class="career-time">2013–2016</span>
-
-          <div>
-            <h3>Part of the team behind the team</h3>
-
-            <span class="career-org">
-              Grambling State University Football
-            </span>
-
-            <p>
-              As a football equipment manager, I worked with
-              equipment, uniforms, travel preparation, and
-              day-to-day operations. A chapter that brought
-              my love of sports into the work itself.
-            </p>
-          </div>
-
-          <span class="career-number" aria-hidden="true">01</span>
-        </article>
+            <figcaption>
+              <strong>Product finish video still</strong>
+              <span>Showing the visual transformation.</span>
+            </figcaption>
+          </figure>
+        </div>
       </div>
     </section>
 
-    <!-- =====================================
-         EDUCATION
-         ===================================== -->
-
-    <section id="education" class="education section">
+    <!-- JOURNALISM & VIDEO STORIES -->
+    <section id="journalism" class="journalism section">
       <div class="section-top">
-        <span class="eyebrow">07 / ALWAYS A STUDENT</span>
+        <span class="eyebrow">
+          JOURNALISM &amp; BROADCAST PRODUCTION
+        </span>
 
         <span class="small">
-          Learning has never been a finished chapter.
+          Where my professional storytelling began.
+        </span>
+      </div>
+
+      <div class="journalism-layout">
+        <div class="broadcast-cover">
+          <div class="art-top">
+            NEWS · SPORTS · DIGITAL CONTENT
+            <span aria-hidden="true">↗</span>
+          </div>
+
+          <span class="broadcast-symbol" aria-hidden="true">“</span>
+
+          <div class="broadcast-title">
+            Find the story.<br>
+            <i>Bring it to life.</i>
+          </div>
+
+          <div class="art-bottom">
+            2015–2017
+            <span>CONTENT PRODUCTION</span>
+          </div>
+        </div>
+
+        <div class="journalism-copy">
+          <h2>
+            My foundation<br>
+            <em>in storytelling.</em>
+          </h2>
+
+          <p>
+            My journalism experience spans digital and
+            broadcast content, including news and sports
+            production. I worked with producers and on-air
+            talent to help bring stories to the screen.
+          </p>
+
+          <div class="news-affiliations">
+            <span>ESPN</span>
+            <span>Raycom Media</span>
+            <span>CBS affiliate production</span>
+          </div>
+
+          <p>
+            My work included studio cameras, audio,
+            graphics, B-roll, social content, and
+            supporting scripts for sports packages.
+          </p>
+
+          <div class="tags">
+            <span>Broadcast production</span>
+            <span>Sports content</span>
+            <span>Digital storytelling</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="video-stories" class="case-reel">
+        <div class="case-reel-heading">
+          <span class="eyebrow">
+            SELECTED JOURNALISM SAMPLES
+          </span>
+
+          <h3>On camera and in conversation.</h3>
+        </div>
+
+        <div class="video-grid">
+          <article class="story-card">
+            <div class="video-frame">
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/WrstqvcyYPI"
+                title="Fox 32 Summer 2015 — Anchor Desk"
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <div class="story-card-body">
+              <span class="eyebrow">ON-CAMERA SAMPLE</span>
+
+              <h3>Fox 32 Summer 2015 — Anchor Desk</h3>
+
+              <a
+                class="sample-link"
+                href="https://www.youtube.com/watch?v=WrstqvcyYPI"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Watch on YouTube
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="story-card">
+            <div class="video-frame">
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/NTsHXhKRkqA"
+                title="Lea Bryant — Video Story"
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <div class="story-card-body">
+              <span class="eyebrow">VIDEO STORYTELLING</span>
+
+              <!-- Replace with the specific title of this story. -->
+              <h3>Video Story</h3>
+
+              <a
+                class="sample-link"
+                href="https://www.youtube.com/watch?v=NTsHXhKRkqA"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Watch on YouTube
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="story-card">
+            <div class="video-frame">
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/ZjvSAuF1V9w"
+                title="Young Thug Interview — Grambling Springfest 2016"
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <div class="story-card-body">
+              <span class="eyebrow">ENTERTAINMENT INTERVIEW</span>
+
+              <h3>Young Thug — Grambling Springfest 2016</h3>
+
+              <p>
+                An interview after his performance at
+                Grambling State’s Springfest concert.
+              </p>
+
+              <a
+                class="sample-link"
+                href="https://www.youtube.com/watch?v=ZjvSAuF1V9w"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Watch on YouTube
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="education section">
+      <div class="section-top">
+        <span class="eyebrow">EDUCATION</span>
+
+        <span class="small">
+          Always a student.
         </span>
       </div>
 
       <div class="education-heading">
         <h2>
-          A foundation in stories.<br>
-          A mind for business.<br>
-          <em>The skills to build.</em>
+          Storytelling.<br>
+          Business.<br>
+          <em>Technology.</em>
         </h2>
 
         <p>
-          Each step in my education added a new lens.
-          Journalism helped me tell the story. Business
-          helped me see the bigger picture. Coding gave
-          me another way to bring ideas to life.
+          My education connects the creative, commercial,
+          and technical sides of my work. Each has added
+          a different perspective.
         </p>
       </div>
 
       <div class="education-grid">
         <article class="education-card grambling">
-          <span class="eyebrow">01 / FINDING MY VOICE</span>
+          <span class="eyebrow">JOURNALISM</span>
 
           <span class="degree-year">2016</span>
 
@@ -1011,8 +1075,8 @@
           </p>
 
           <p>
-            My storytelling foundation, my football chapter,
-            and a lasting source of HBCU pride.
+            My storytelling foundation and a lasting
+            source of HBCU pride.
           </p>
 
           <span class="degree-mark">
@@ -1021,9 +1085,7 @@
         </article>
 
         <article class="education-card">
-          <span class="eyebrow">
-            02 / EXPANDING THE PICTURE
-          </span>
+          <span class="eyebrow">BUSINESS</span>
 
           <span class="degree-year">2019</span>
 
@@ -1038,15 +1100,15 @@
           </p>
 
           <p>
-            A broader perspective on strategy, organizations,
-            and the decisions that move work forward.
+            A broader understanding of organizations,
+            strategy, and business decisions.
           </p>
 
           <span class="degree-mark">MBA</span>
         </article>
 
         <article class="education-card">
-          <span class="eyebrow">03 / LEARNING TO BUILD</span>
+          <span class="eyebrow">DEVELOPMENT</span>
 
           <span class="degree-year">2022</span>
 
@@ -1061,8 +1123,8 @@
           </p>
 
           <p>
-            Taking my curiosity into code and building
-            the technical foundation to create for the web.
+            A technical foundation for turning
+            ideas into web experiences.
           </p>
 
           <span class="degree-mark">
@@ -1070,844 +1132,22 @@
           </span>
         </article>
       </div>
-
-      <div class="learning-note">
-        <span aria-hidden="true">✳</span>
-
-        <p>
-          There’s always another skill to explore,
-          another question to ask, and another way to grow.
-        </p>
-      </div>
     </section>
 
-    <!-- =====================================
-         CREATIVE INTERESTS
-         ===================================== -->
-
-    <section id="creative" class="creative section">
-      <div class="section-top">
-        <span class="eyebrow">
-          08 / CREATIVITY BEYOND THE JOB TITLE
-        </span>
-
-        <span class="small">
-          Some interests don’t clock out.
-        </span>
-      </div>
-
-      <h2>
-        A camera. A little code.<br>
-        <em>Something worth creating.</em>
-      </h2>
-
-      <div class="creative-grid">
-        <article class="passion photography">
-          <div class="passion-icon" aria-hidden="true">
-            <svg viewBox="0 0 120 85" fill="none">
-              <path
-                d="M14 22h24l9-12h28l9 12h22v54H14z"
-                stroke="currentColor"
-                stroke-width="2"
-              ></path>
-
-              <circle
-                cx="61"
-                cy="48"
-                r="19"
-                stroke="currentColor"
-                stroke-width="2"
-              ></circle>
-
-              <circle
-                cx="94"
-                cy="32"
-                r="3"
-                fill="currentColor"
-              ></circle>
-            </svg>
-          </div>
-
-          <span class="eyebrow">THROUGH MY LENS</span>
-
-          <h3>Photography</h3>
-
-          <p>
-            I love working on photography. It’s another way
-            to explore storytelling, pay attention to details,
-            and make something that feels like me.
-          </p>
-
-          <a class="text-link" href="#photography">
-            Explore my photography space ↗
-          </a>
-        </article>
-
-        <article class="passion coding">
-          <span class="passion-code" aria-hidden="true">
-            &lt;/&gt;
-          </span>
-
-          <span class="eyebrow">
-            FROM IDEA TO INTERACTION
-          </span>
-
-          <h3>Coding</h3>
-
-          <p>
-            Building for the web is both a skill and a
-            creative outlet. I enjoy figuring things out,
-            experimenting, and watching an idea become
-            something someone can use.
-          </p>
-
-          <a
-            class="text-link"
-            href="https://github.com/LeaBryant"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Explore what I’m building ↗
-          </a>
-        </article>
-      </div>
-    </section>
-
-    <!-- =====================================
-         PHOTOGRAPHY GALLERY
-
-         To add a photo, replace a photo-placeholder
-         div with this, using your own filename:
-
-         <a
-           href="./assets/photography/photo-01.jpg"
-           target="_blank"
-           rel="noopener noreferrer"
-         >
-           <img
-             src="./assets/photography/photo-01.jpg"
-             alt="Describe your photograph"
-             loading="lazy"
-           >
-           <span class="photo-open">↗</span>
-         </a>
-
-         Also update the caption.
-         ===================================== -->
-<!-- =====================================
-     FEATURED CASE STUDY: DAZZLE DRY
-     ===================================== -->
-
-     <!-- =====================================
-     DAZZLE DRY CASE STUDY
-     ===================================== -->
-
-<section id="dazzle-dry" class="portfolio-section">
-
-    <!-- INTRODUCTION -->
-    <div class="portfolio-section-heading">
-      <div>
-        <span class="eyebrow">
-          FEATURED WORK / VB COSMETICS · DAZZLE DRY
-        </span>
-  
-        <h2>
-          From the first idea<br>
-          <em>to the final frame.</em>
-        </h2>
-      </div>
-  
-      <p>
-        My work with Dazzle Dry brought together digital
-        marketing and hands-on content creation, including
-        social media, advertising videos, product content,
-        and launch photography.
-      </p>
-    </div>
-  
-    <div class="tags">
-      <span>Social media strategy</span>
-      <span>Video production</span>
-      <span>Filming &amp; editing</span>
-      <span>Product photography</span>
-      <span>Paid advertising</span>
-      <span>Performance reporting</span>
-    </div>
-  
-    <!-- RESULTS -->
-    <div
-      class="case-results"
-      aria-label="Historical results reported in my project presentation"
-    >
-      <article>
-        <span class="eyebrow">INSTAGRAM</span>
-  
-        <p class="case-number">+2.75%</p>
-  
-        <h3>Follower growth</h3>
-  
-        <p>
-          Over the three-month period shown in my presentation.
-        </p>
-      </article>
-  
-      <article>
-        <span class="eyebrow">TIKTOK</span>
-  
-        <p class="case-number">+15.1%</p>
-  
-        <h3>Follower growth</h3>
-  
-        <p>
-          Over the three-month period shown in my presentation.
-        </p>
-      </article>
-  
-      <article>
-        <span class="eyebrow">FACEBOOK</span>
-  
-        <p class="case-number">15%+</p>
-  
-        <h3>Growth in followers and likes</h3>
-  
-        <p>
-          Reported since I began working on the page.
-        </p>
-      </article>
-  
-      <article>
-        <span class="eyebrow">YOUTUBE</span>
-  
-        <p class="case-number">+52%</p>
-  
-        <h3>Channel views</h3>
-  
-        <p>
-          Increase attributed to paid ads over the
-          28-day reporting period.
-        </p>
-      </article>
-    </div>
-  
-    <p class="case-reporting-note">
-      Historical results reported in my project presentation.
-      Each platform reflects its own reporting period.
-    </p>
-  
-    <!-- FEATURED VIDEO -->
-    <div class="case-reel">
-      <div class="case-reel-heading">
-        <span class="eyebrow">WATCH THE WORK</span>
-  
-        <h3>Content I created, shot, and edited.</h3>
-  
-        <p>
-          A sample of my video production work for Dazzle Dry,
-          bringing product storytelling to life through
-          filming and editing.
-        </p>
-      </div>
-  
-      <!--
-        Place your actual MP4 sample here:
-        assets/videos/dazzle-dry-sample.mp4
-      -->
-  
-      <video
-        class="case-video"
-        controls
-        playsinline
-        preload="metadata"
-        aria-label="Dazzle Dry video work sample by Lea Bryant"
-      >
-        <source
-          src="./assets/videos/dazzle-dry-sample.mp4"
-          type="video/mp4"
-        >
-  
-        Your browser does not support embedded video.
-  
-        <a href="./assets/videos/dazzle-dry-sample.mp4">
-          Open the Dazzle Dry video sample.
-        </a>
-      </video>
-    </div>
-  
-    <!-- IMAGE GALLERY -->
-    <div class="case-reel">
-      <div class="case-reel-heading">
-        <span class="eyebrow">EXPLORE THE DETAILS</span>
-  
-        <h3>Behind the camera. Behind the content.</h3>
-  
-        <p>
-          Product launch photography, stills from video
-          content, and a look behind the scenes.
-          Select an image to view it at full size.
-        </p>
-      </div>
-  
-      <div class="dazzle-gallery">
-  
-        <!-- IMAGE 01 -->
-        <figure>
-          <a
-            href="./assets/samples/dazzle-launch-yellow.jpg"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="View yellow product launch photograph at full size"
-          >
-            <img
-              src="./assets/Samples/dazzle-launch-yellow.jpg"
-              alt="Dazzle Dry nail lacquers arranged on white display forms against a yellow background"
-              loading="lazy"
-              decoding="async"
-            >
-          </a>
-  
-          <figcaption>
-            <strong>Product launch photography</strong>
-  
-            <span>
-              Color, composition, and product presentation.
-            </span>
-          </figcaption>
-        </figure>
-  
-        <!-- IMAGE 02 -->
-        <figure>
-          <a
-            href="./assets/samples/dazzle-launch-pastel.jpg"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="View pastel product launch photograph at full size"
-          >
-            <img
-              src="./assets/Samples/dazzle-launch-pastel.jpg"
-              alt="Dazzle Dry nail lacquers displayed on clear blocks with pastel pink and blue lighting"
-              loading="lazy"
-              decoding="async"
-            >
-          </a>
-  
-          <figcaption>
-            <strong>Product launch photography</strong>
-  
-            <span>
-              A different visual direction for the collection.
-            </span>
-          </figcaption>
-        </figure>
-  
-        <!-- IMAGE 03 -->
-        <figure>
-          <a
-            href="./assets/samples/dazzle-behind-the-scenes.jpg"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="View the behind-the-scenes photograph at full size"
-          >
-            <img
-              src="./assets/Samples/dazzle-behind-the-scenes.jpg"
-              alt="Behind the scenes of a product shoot with a camera, lighting, and tabletop set"
-              loading="lazy"
-              decoding="async"
-            >
-          </a>
-  
-          <figcaption>
-            <strong>Behind the scenes</strong>
-  
-            <span>
-              A look at the production setup.
-            </span>
-          </figcaption>
-        </figure>
-  
-        <!-- IMAGE 04 -->
-        <figure>
-          <a
-            href="./assets/samples/dazzle-ad-still.jpg"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="View advertising video still at full size"
-          >
-            <img
-              src="./assets/Samples/dazzle-ad-still.jpg"
-              alt="Still from a Dazzle Dry advertisement showing a product pouring with the words One Coat"
-              loading="lazy"
-              decoding="async"
-            >
-          </a>
-  
-          <figcaption>
-            <strong>Advertising creative — video still</strong>
-  
-            <span>
-              From content I created, shot, and edited.
-            </span>
-          </figcaption>
-        </figure>
-  
-        <!-- IMAGE 05 -->
-        <figure>
-          <a
-            href="./assets/samples/dazzle-application-still.jpg"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="View product application video still at full size"
-          >
-            <img
-              src="./assets/Samples/dazzle-application-still.jpg"
-              alt="Video still showing two close-up views of nail product application"
-              loading="lazy"
-              decoding="async"
-            >
-          </a>
-  
-          <figcaption>
-            <strong>Product demonstration — video still</strong>
-  
-            <span>
-              Showing the application process up close.
-            </span>
-          </figcaption>
-        </figure>
-  
-        <!-- IMAGE 06 -->
-        <figure>
-          <a
-            href="./assets/samples/dazzle-finish-still.jpg"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="View product finish video still at full size"
-          >
-            <img
-              src="./assets/Samples/dazzle-finish-still.jpg"
-              alt="Video still comparing a bare nail with a pearl-colored finished nail"
-              loading="lazy"
-              decoding="async"
-            >
-          </a>
-  
-          <figcaption>
-            <strong>Product finish — video still</strong>
-  
-            <span>
-              Showing the visual transformation.
-            </span>
-          </figcaption>
-        </figure>
-  
-      </div>
-    </div>
-  
-    <!-- MY CONTRIBUTIONS -->
-    <div class="steps">
-      <div>
-        <span>01 / STRATEGY &amp; PERFORMANCE</span>
-  
-        <h3>Connecting content to the audience.</h3>
-  
-        <p>
-          Working across social channels and reviewing
-          performance to understand audience growth,
-          engagement, and the reach of paid content.
-        </p>
-      </div>
-  
-      <div>
-        <span>02 / VIDEO &amp; ADVERTISING</span>
-  
-        <h3>Creating, shooting, and editing.</h3>
-  
-        <p>
-          Producing product-focused advertising videos
-          featured in Google and Facebook campaigns,
-          alongside additional social video content.
-        </p>
-      </div>
-  
-      <div>
-        <span>03 / PRODUCT PHOTOGRAPHY</span>
-  
-        <h3>Giving the product a visual story.</h3>
-  
-        <p>
-          Creating still imagery for product launches,
-          using composition, lighting, and styling
-          to present the products.
-        </p>
-      </div>
-    </div>
-  
-    <!-- PERSONAL CONNECTION -->
-    <div class="case-takeaway">
-      <span class="eyebrow">
-        THE CONNECTION TO MY STORY
-      </span>
-  
-      <p>
-        This is where my storytelling background meets my
-        love of making things. I enjoy shaping the direction,
-        getting behind the camera, working through the edit,
-        and seeing how the finished content connects
-        with an audience.
-      </p>
-    </div>
-  
-  </section>
-
-    <!-- =====================================
-         VIDEO STORIES
-         ===================================== -->
-
-    <section
-      id="video-stories"
-      class="portfolio-section video-stories"
-    >
-      <div class="portfolio-section-heading">
-        <div>
-          <span class="eyebrow">10 / STORIES IN MOTION</span>
-
-          <h2>
-            Press play.<br>
-            <em>Meet the story.</em>
-          </h2>
-        </div>
-
-        <p>
-          Selected journalism and video samples.
-          A look at the storytelling chapter of my work.
-        </p>
-      </div>
-
-      <div class="video-grid">
-        <article class="story-card">
-          <div class="video-frame">
-            <iframe
-              src="https://www.youtube-nocookie.com/embed/WrstqvcyYPI"
-              title="Fox 32 Summer 2015 — Anchor Desk"
-              loading="lazy"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </div>
-
-          <div class="story-card-body">
-            <span class="eyebrow">
-              JOURNALISM / ON-CAMERA SAMPLE
-            </span>
-
-            <h3>
-              Fox 32 Summer 2015 — Anchor Desk
-            </h3>
-
-            <p>
-              An anchor desk sample from summer 2015.
-            </p>
-
-            <a
-              class="sample-link"
-              href="https://www.youtube.com/watch?v=WrstqvcyYPI"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Watch on YouTube
-              <span aria-hidden="true">↗</span>
-            </a>
-          </div>
-        </article>
-
-        <article class="story-card">
-          <div class="video-frame">
-            <iframe
-              src="https://www.youtube-nocookie.com/embed/NTsHXhKRkqA"
-              title="Lea Bryant — Video Story"
-              loading="lazy"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </div>
-
-          <div class="story-card-body">
-            <span class="eyebrow">
-              VIDEO / STORYTELLING
-            </span>
-
-            <!-- Replace with this video's specific title. -->
-            <h3>Video Story</h3>
-
-            <p>
-              A selection from my video storytelling work.
-            </p>
-
-            <a
-              class="sample-link"
-              href="https://www.youtube.com/watch?v=NTsHXhKRkqA"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Watch on YouTube
-              <span aria-hidden="true">↗</span>
-            </a>
-          </div>
-        </article>
-
-        <article class="story-card">
-          <div class="video-frame">
-            <iframe
-              src="https://www.youtube-nocookie.com/embed/ZjvSAuF1V9w"
-              title="Young Thug Interview — Grambling Springfest 2016"
-              loading="lazy"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </div>
-
-          <div class="story-card-body">
-            <span class="eyebrow">
-              INTERVIEW / ENTERTAINMENT
-            </span>
-
-            <h3>
-              Young Thug Interview — Grambling Springfest 2016
-            </h3>
-
-            <p>
-              Young Thug sat down with us after performing
-              at Grambling State’s 2016 Springfest concert.
-            </p>
-
-            <a
-              class="sample-link"
-              href="https://www.youtube.com/watch?v=ZjvSAuF1V9w"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Watch on YouTube
-              <span aria-hidden="true">↗</span>
-            </a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- =====================================
-         PROFESSIONAL WORK SAMPLES
-
-         These cards are ready for your real samples.
-
-         To add a PDF link, replace:
-         <span class="sample-coming-soon">...</span>
-
-         with:
-         <a
-           class="sample-link"
-           href="./assets/samples/your-sample.pdf"
-           target="_blank"
-           rel="noopener noreferrer"
-         >
-           View the sample <span>↗</span>
-         </a>
-
-         To add a preview image, replace the text
-         inside sample-preview with:
-         <img
-           src="./assets/samples/your-preview.jpg"
-           alt="Description of your work sample"
-           loading="lazy"
-         >
-         ===================================== -->
-
-    <section id="work-samples" class="portfolio-section">
-      <div class="portfolio-section-heading">
-        <div>
-          <span class="eyebrow">
-            11 / A CLOSER LOOK AT THE WORK
-          </span>
-
-          <h2>
-            Ideas are a start.<br>
-            <em>Here’s the execution.</em>
-          </h2>
-        </div>
-
-        <p>
-          A space for selected emails, campaigns, website
-          content, presentations, and creative planning,
-          with context on the thinking behind the work.
-        </p>
-      </div>
-
-      <div class="samples-grid">
-        <article class="sample-card">
-          <div
-            class="sample-preview sample-preview-email sample-placeholder"
-          >
-            Email sample preview
-          </div>
-
-          <div class="sample-card-body">
-            <span class="eyebrow">
-              EMAIL &amp; LIFECYCLE CONTENT
-            </span>
-
-            <h3>Email campaigns</h3>
-
-            <p>
-              Selected email examples and the strategy,
-              audience, and messaging behind them.
-            </p>
-
-            <span class="sample-coming-soon">
-              Samples being curated
-            </span>
-          </div>
-        </article>
-
-        <article class="sample-card">
-          <div
-            class="sample-preview sample-preview-web sample-placeholder"
-          >
-            Digital experience preview
-          </div>
-
-          <div class="sample-card-body">
-            <span class="eyebrow">
-              WEBSITE &amp; DIGITAL EXPERIENCE
-            </span>
-
-            <h3>Content that guides the experience</h3>
-
-            <p>
-              A space for website content, navigation,
-              and digital projects that help people
-              find their next step.
-            </p>
-
-            <span class="sample-coming-soon">
-              Samples being curated
-            </span>
-          </div>
-        </article>
-
-        <article class="sample-card">
-          <div
-            class="sample-preview sample-preview-strategy sample-placeholder"
-          >
-            Strategy sample preview
-          </div>
-
-          <div class="sample-card-body">
-            <span class="eyebrow">
-              STRATEGY &amp; CREATIVE PLANNING
-            </span>
-
-            <h3>The thinking behind the work</h3>
-
-            <p>
-              Selected content plans, presentations,
-              customer journeys, and campaign concepts.
-            </p>
-
-            <span class="sample-coming-soon">
-              Samples being curated
-            </span>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- =====================================
-         MORE ABOUT ME
-         ===================================== -->
-
-    <section id="about" class="about section">
-      <div class="about-statement">
-        <span class="eyebrow">
-          12 / STILL LEA, THROUGH EVERY CHAPTER
-        </span>
-
-        <h2>
-          More than a résumé.<br>
-          More than one hat.<br>
-          <em>A story of my own.</em>
-        </h2>
-
-        <span class="about-star" aria-hidden="true">✳</span>
-      </div>
-
-      <div class="about-copy">
-        <p class="large">
-          The connection across every chapter is simple:
-          <strong>
-            I want to keep learning, keep creating,
-            and do work that means something.
-          </strong>
-        </p>
-
-        <p>
-          I can be the person thinking through the strategy,
-          shaping the story, working through the code,
-          or bringing the right people into a conversation.
-          I like understanding how those pieces fit together.
-        </p>
-
-        <p>
-          I’m also the girl from a sports-loving family.
-          The proud Grambling alum. The creative who loves
-          photography. The person who chose to learn to
-          code because there was more I wanted to be
-          able to make.
-        </p>
-
-        <p>
-          My story is still unfolding.
-          That’s one of my favorite things about it.
-        </p>
-
-        <div class="credentials">
-          <span>Kansas-born</span>
-          <span>Arizona-raised</span>
-          <span>Grambling proud</span>
-          <span>Nashville-based</span>
-        </div>
-
-        <a
-          class="text-link"
-          href="https://www.linkedin.com/in/leadanitrabryant/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Connect with me on LinkedIn ↗
-        </a>
-      </div>
-    </section>
-
-    <!-- =====================================
-         CONTACT
-         ===================================== -->
-
+    <!-- CONTACT -->
     <section id="contact" class="contact">
       <div>
-        <span class="eyebrow">
-          GOOD CONVERSATIONS START SOMEWHERE
-        </span>
+        <span class="eyebrow">LET’S CONNECT</span>
 
         <h2>
-          You know my story.<br>
-          <em>Let’s hear yours.</em>
-          <span aria-hidden="true">↗</span>
+          Let’s make<br>
+          <em>something meaningful.</em>
         </h2>
 
         <p>
           For professional opportunities, creative
           collaborations, or a conversation about
-          what we could make together.
+          what we could build together.
         </p>
 
         <a
@@ -1944,23 +1184,19 @@
 
   </main>
 
-  <!-- =====================================
-       FOOTER
-       ===================================== -->
-
+  <!-- FOOTER -->
   <footer>
     <a class="wordmark" href="#">
       lea bryant<span aria-hidden="true">✳</span>
     </a>
 
     <span>
-      MANY CHAPTERS. ALWAYS CURIOUS. ALWAYS LEA.
+      MANY CHAPTERS. ALWAYS LEA.
     </span>
 
-    <a href="#photography">Photography</a>
-    <a href="#video-stories">Video stories</a>
-    <a href="#work-samples">Work samples</a>
-    <a href="#dazzle-dry">Dazzle Dry case study</a>
+    <a href="#story">My story</a>
+    <a href="#work-samples">Dazzle Dry work</a>
+    <a href="#video-stories">Journalism samples</a>
 
     <span>
       © <span id="year">2026</span> Lea Bryant
@@ -1969,4 +1205,4 @@
     <a href="#">Back to top ↑</a>
   </footer>
 </body>
-</html>
+</html>git add index.html
