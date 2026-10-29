@@ -1,340 +1,276 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>The Creative Side | Lea Danitra</title>
+  <meta name="description"
+    content="The Creative Side of Lea Danitra Bryant. A personal collection of photography, artwork, handmade projects, and creative experiments. Coming soon.">
 
-  <meta
-    name="description"
-    content="The Creative Side of Lea Danitra is under construction. Come back soon for artwork, photography, and personal creative projects."
-  >
+  <title>The Creative Side | Lea Danitra</title>
 
   <link rel="stylesheet" href="assets/brand.css?v=10">
   <script src="assets/brand.js?v=10" defer></script>
 
   <style>
-    /* =====================================
-       CREATIVE PAGE — RUBBER DUCK COMING SOON
-    ===================================== */
+    /* ==========================================
+       THE CREATIVE SIDE
+       SIMPLE COMING SOON PAGE
+    ========================================== */
 
     .creative-coming-soon {
-      position: relative;
-      min-height: 76vh;
-      min-height: 76svh;
-      overflow: hidden;
-
+      background: #F8F6F0;
+      min-height: 75vh;
+      min-height: 75svh;
       display: flex;
       align-items: center;
-      justify-content: center;
-
-      padding: 72px 24px 88px;
-      background:
-        radial-gradient(circle at top left, #fff7fb 0%, #f8f2ef 40%, #f7f0ec 100%);
-      text-align: center;
+      padding: 90px 0 110px;
     }
 
-    .coming-soon-inner {
-      position: relative;
-      z-index: 2;
-      width: 100%;
-      max-width: 760px;
-      margin: 0 auto;
+    .coming-soon-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr);
+      gap: clamp(40px, 8vw, 110px);
+      align-items: center;
     }
 
-    .coming-soon-label {
-      display: inline-block;
-      margin-bottom: 22px;
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: .18em;
-      color: #6d8975;
-      text-transform: uppercase;
+    /* LEFT — CONTENT */
+
+    .coming-soon-content {
+      max-width: 670px;
     }
 
-    .duck-wrap {
-      position: relative;
-      width: min(280px, 72vw);
-      margin: 0 auto 26px;
+    .coming-soon-content .eyebrow {
+      margin-bottom: 24px;
     }
 
-    .duck-illustration {
-      width: 100%;
-      height: auto;
-      display: block;
-      animation: duckBob 4s ease-in-out infinite;
-      filter: drop-shadow(0 16px 20px rgba(190, 170, 140, 0.18));
+    .coming-soon-content h1 {
+      font-size: clamp(3.2rem, 6.5vw, 6.5rem);
+      line-height: 1.05;
+      letter-spacing: -.055em;
+      margin: 0 0 30px;
+      color: #27382E;
     }
 
-    @keyframes duckBob {
-      0%, 100% {
-        transform: translateY(0px) rotate(0deg);
-      }
-      50% {
-        transform: translateY(-8px) rotate(-1deg);
-      }
-    }
-
-    .bubble {
-      position: absolute;
-      border-radius: 50%;
-      background: rgba(255,255,255,0.8);
-      border: 1px solid rgba(210, 225, 218, 0.8);
-      animation: bubbleFloat 6s ease-in-out infinite;
-    }
-
-    .bubble::after {
-      content: "";
-      position: absolute;
-      inset: 20% 20% auto auto;
-      width: 24%;
-      aspect-ratio: 1 / 1;
-      border-radius: 50%;
-      background: rgba(255,255,255,0.65);
-    }
-
-    .bubble-one {
-      width: 18px;
-      height: 18px;
-      top: 22px;
-      left: 22px;
-      animation-delay: 0s;
-    }
-
-    .bubble-two {
-      width: 26px;
-      height: 26px;
-      right: 16px;
-      top: 50px;
-      animation-delay: 1.2s;
-    }
-
-    .bubble-three {
-      width: 14px;
-      height: 14px;
-      left: 44px;
-      bottom: 24px;
-      animation-delay: 2.2s;
-    }
-
-    .bubble-four {
-      width: 20px;
-      height: 20px;
-      right: 38px;
-      bottom: 12px;
-      animation-delay: 3s;
-    }
-
-    @keyframes bubbleFloat {
-      0%, 100% {
-        transform: translateY(0);
-        opacity: 0.9;
-      }
-      50% {
-        transform: translateY(-10px);
-        opacity: 1;
-      }
-    }
-
-    .coming-soon-title {
-      margin: 0 0 22px;
-      font-size: clamp(2.7rem, 7vw, 5.8rem);
-      line-height: 1.04;
-      letter-spacing: -0.045em;
-      color: #2c3e35;
-    }
-
-    .coming-soon-title i {
-      color: #c7859f;
+    .coming-soon-content h1 i {
+      color: #A87589;
       font-weight: 500;
     }
 
+    .coming-soon-intro {
+      font-size: clamp(1.1rem, 1.9vw, 1.4rem);
+      line-height: 1.65;
+      color: #505B52;
+      max-width: 550px;
+      margin-bottom: 20px;
+    }
+
     .coming-soon-description {
-      max-width: 500px;
-      margin: 0 auto 30px;
-      font-size: clamp(1rem, 1.75vw, 1.16rem);
+      max-width: 540px;
+      color: #6D756D;
+      font-size: 1rem;
       line-height: 1.8;
-      color: #6b6f69;
-    }
-
-    .duck-message {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-
-      padding: 11px 18px;
       margin-bottom: 34px;
-
-      border-radius: 999px;
-      background: #f5e5eb;
-      color: #9f6f84;
-
-      font-size: 12px;
-      font-weight: 700;
-      letter-spacing: .03em;
     }
 
-    .coming-soon-actions {
-      display: flex;
-      justify-content: center;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-
-    .coming-soon-button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-
-      min-width: 180px;
-      padding: 14px 26px;
-
-      border-radius: 999px;
+    .coming-soon-link {
+      display: inline-block;
+      padding-bottom: 6px;
+      border-bottom: 1px solid #54725D;
+      color: #54725D;
       text-decoration: none;
-      font-size: 14px;
       font-weight: 700;
-
-      transition: transform .2s ease, background .2s ease, color .2s ease;
+      font-size: .88rem;
+      transition: color .2s ease;
     }
 
-    .coming-soon-button.primary {
-      background: #5f7b67;
-      color: #fff;
+    .coming-soon-link:hover {
+      color: #A87589;
     }
 
-    .coming-soon-button.primary:hover {
-      background: #47604f;
-      transform: translateY(-2px);
+    /* RIGHT — LDB MONOGRAM */
+
+    .coming-soon-monogram {
+      min-width: 0;
+      background: #F0E7E6;
+      border: 1px solid #E8D8D7;
+      padding: 35px 22px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 375px;
     }
 
-    .coming-soon-button.secondary {
-      background: transparent;
-      color: #5f7b67;
-      border: 1px solid #b7c7bc;
-    }
-
-    .coming-soon-button.secondary:hover {
-      background: #edf3ee;
-      transform: translateY(-2px);
-    }
-
-    .creative-star {
-      position: absolute;
-      pointer-events: none;
-      line-height: 1;
-      opacity: 0.9;
-    }
-
-    .star-one {
-      top: 14%;
-      left: 12%;
-      color: #dbb4c2;
-      font-size: 30px;
-    }
-
-    .star-two {
-      top: 22%;
-      right: 13%;
-      color: #a3b9aa;
-      font-size: 22px;
-    }
-
-    .star-three {
-      bottom: 14%;
-      left: 18%;
-      color: #efcb7b;
-      font-size: 20px;
-    }
-
-    .star-four {
-      bottom: 17%;
-      right: 18%;
-      color: #dbb4c2;
-      font-size: 28px;
-    }
-
-    .coming-soon-signature {
-      display: block;
-      margin-top: 36px;
-      color: #a28b92;
-      font-size: 10px;
+    .monogram-label {
+      color: #6B766D;
+      font-size: .68rem;
       font-weight: 700;
-      letter-spacing: .18em;
+      letter-spacing: .15em;
       text-transform: uppercase;
     }
 
-    @media (max-width: 700px) {
+    .monogram-initials {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 400;
+      font-style: italic;
+      font-size: clamp(5rem, 10vw, 8rem);
+      line-height: 1.25;
+      letter-spacing: -.11em;
+      color: #4E6C57;
+      padding-right: .11em;
+      margin: 27px 0 20px;
+    }
+
+    .monogram-divider {
+      width: 55px;
+      height: 1px;
+      background: #BA8FA0;
+      margin-bottom: 25px;
+    }
+
+    .monogram-footer {
+      color: #776E70;
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    /* WHAT'S COMING */
+
+    .creative-preview-section {
+      padding: 65px 0 100px;
+      background: #FFFEFB;
+      border-top: 1px solid #E4E4DF;
+    }
+
+    .creative-preview-heading {
+      margin-bottom: 38px;
+    }
+
+    .creative-preview-heading h2 {
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      margin: 12px 0 0;
+      color: #27382E;
+    }
+
+    .creative-preview-heading h2 i {
+      color: #A87589;
+    }
+
+    .creative-preview-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 26px;
+    }
+
+    .creative-preview-item {
+      border-top: 1px solid #CDD6CD;
+      padding-top: 18px;
+    }
+
+    .creative-preview-number {
+      display: block;
+      color: #6B8A72;
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      margin-bottom: 20px;
+    }
+
+    .creative-preview-item h3 {
+      font-size: clamp(1.2rem, 1.8vw, 1.55rem);
+      letter-spacing: -.03em;
+      line-height: 1.2;
+      margin-bottom: 12px;
+      color: #27382E;
+    }
+
+    .creative-preview-item p {
+      font-size: .9rem;
+      line-height: 1.7;
+      color: #6D756D;
+      margin-bottom: 0;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 900px) {
+      .coming-soon-layout {
+        grid-template-columns: 1fr;
+        gap: 50px;
+      }
+
       .creative-coming-soon {
-        min-height: 74svh;
-        padding: 56px 20px 70px;
+        min-height: auto;
+        padding: 75px 0;
       }
 
-      .duck-wrap {
-        width: min(220px, 68vw);
+      .coming-soon-monogram {
+        width: 100%;
+        max-width: 440px;
+        min-height: 300px;
       }
 
-      .coming-soon-title {
-        font-size: clamp(2.4rem, 10vw, 4rem);
-      }
-
-      .coming-soon-description {
-        max-width: 340px;
-      }
-
-      .coming-soon-actions {
-        gap: 10px;
-      }
-
-      .coming-soon-button {
-        min-width: 160px;
-        padding: 13px 22px;
-      }
-
-      .star-one {
-        left: 6%;
-        top: 10%;
-      }
-
-      .star-two {
-        right: 7%;
-        top: 18%;
-      }
-
-      .star-three {
-        left: 8%;
-        bottom: 10%;
-      }
-
-      .star-four {
-        right: 9%;
-        bottom: 11%;
+      .creative-preview-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 32px 24px;
       }
     }
 
-    @media (prefers-reduced-motion: reduce) {
-      .duck-illustration,
-      .bubble {
-        animation: none;
+    @media (max-width: 520px) {
+      .creative-coming-soon {
+        padding: 55px 0 65px;
       }
 
-      .coming-soon-button {
-        transition: none;
+      .coming-soon-content h1 {
+        font-size: clamp(2.8rem, 12vw, 4.5rem);
+      }
+
+      .coming-soon-monogram {
+        min-height: 260px;
+      }
+
+      .monogram-initials {
+        font-size: 6rem;
+      }
+
+      .creative-preview-section {
+        padding: 55px 0 75px;
+      }
+
+      .creative-preview-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .creative-preview-number {
+        margin-bottom: 12px;
       }
     }
   </style>
 </head>
+
 <body class="creative-page">
 
   <a class="skip" href="#main">Skip to content</a>
 
+  <!-- HEADER -->
   <header class="site-header">
-    <a class="brand" href="index.html" aria-label="Lea Danitra home">
+
+    <a class="brand"
+       href="index.html"
+       aria-label="Lea Danitra home">
       lea<i>danitra</i>
     </a>
 
-    <button class="menu-toggle" aria-controls="primary-nav" aria-expanded="false">
+    <button
+      class="menu-toggle"
+      aria-controls="primary-nav"
+      aria-expanded="false">
       Menu <span aria-hidden="true">+</span>
     </button>
 
@@ -342,178 +278,205 @@
       <a href="index.html">Home</a>
       <a href="work.html">My work</a>
       <a href="grambling.html">Grambling &amp; me</a>
-      <a href="creative.html" aria-current="page">The creative side</a>
-      <a class="nav-hello" href="#contact">Say hello ↗</a>
+      <a href="creative.html" aria-current="page">
+        The creative side
+      </a>
+      <a class="nav-hello" href="#contact">
+        Say hello ↗
+      </a>
     </nav>
+
   </header>
 
   <main id="main">
+
+    <!-- COMING SOON HERO -->
     <section class="creative-coming-soon">
 
-      <span class="creative-star star-one" aria-hidden="true">✳</span>
-      <span class="creative-star star-two" aria-hidden="true">✦</span>
-      <span class="creative-star star-three" aria-hidden="true">✧</span>
-      <span class="creative-star star-four" aria-hidden="true">✳</span>
+      <div class="wrap coming-soon-layout">
 
-      <div class="coming-soon-inner">
-        <p class="coming-soon-label">THE CREATIVE SIDE OF LEA</p>
+        <div class="coming-soon-content">
 
-        <div class="duck-wrap">
-          <span class="bubble bubble-one" aria-hidden="true"></span>
-          <span class="bubble bubble-two" aria-hidden="true"></span>
-          <span class="bubble bubble-three" aria-hidden="true"></span>
-          <span class="bubble bubble-four" aria-hidden="true"></span>
+          <p class="eyebrow">
+            THE CREATIVE SIDE / A PERSONAL COLLECTION
+          </p>
 
-          <svg
-            class="duck-illustration"
-            viewBox="0 0 320 260"
-            xmlns="http://www.w3.org/2000/svg"
-            role="img"
-            aria-labelledby="rubber-duck-title"
-          >
-            <title id="rubber-duck-title">Cute rubber duck illustration</title>
+          <h1>
+            A little something<br>
+            <i>is in the works.</i>
+          </h1>
 
-            <!-- shadow -->
-            <ellipse cx="160" cy="236" rx="92" ry="14" fill="#eadfd9"/>
+          <p class="coming-soon-intro">
+            Not everything I create needs a brief.
+            Some things I make simply because I
+            love making them.
+          </p>
 
-            <!-- tiny splash base -->
-            <path
-              d="M86 222c14-12 31-8 43 0 13-10 33-10 49 0 15-11 38-10 55 2 10-6 21-7 31 0"
-              fill="none"
-              stroke="#dfeae3"
-              stroke-width="6"
-              stroke-linecap="round"
-            />
+          <p class="coming-soon-description">
+            This part of my website is still under
+            construction. Soon, it'll be home to
+            my artwork, photography, handmade pieces,
+            and the creative projects I explore
+            outside of my professional work.
+          </p>
 
-            <!-- tail -->
-            <path
-              d="M85 138c-21 0-37 18-37 39 0 18 11 33 31 37 13 2 26-1 37-10"
-              fill="#ffd44d"
-            />
-
-            <!-- body -->
-            <ellipse cx="161" cy="155" rx="93" ry="68" fill="#ffd84f"/>
-
-            <!-- belly -->
-            <ellipse cx="157" cy="168" rx="66" ry="46" fill="#ffe994"/>
-
-            <!-- wing -->
-            <path
-              d="M134 160c-11 2-26 11-29 26-2 14 9 28 28 30 18 1 33-10 35-28 2-17-13-31-34-28z"
-              fill="#ffcf43"
-            />
-
-            <!-- head -->
-            <circle cx="217" cy="95" r="51" fill="#ffe05f"/>
-
-            <!-- beak top -->
-            <path
-              d="M255 103c17-3 35 4 42 15-4 9-17 16-35 16-14 0-24-4-31-11 2-10 11-17 24-20z"
-              fill="#ff9f47"
-            />
-
-            <!-- beak bottom -->
-            <path
-              d="M257 118c10 5 24 8 39 6-5 10-17 17-33 17-11 0-19-3-25-9 4-5 10-10 19-14z"
-              fill="#f48c39"
-            />
-
-            <!-- eye -->
-            <circle cx="213" cy="91" r="5.5" fill="#2f2e2b"/>
-            <circle cx="211" cy="89" r="1.4" fill="#ffffff"/>
-
-            <!-- cheek blush -->
-            <circle cx="198" cy="108" r="9" fill="#f6b7bd" opacity=".55"/>
-
-            <!-- smile -->
-            <path
-              d="M198 116c6 6 16 7 24 1"
-              fill="none"
-              stroke="#c88745"
-              stroke-width="3"
-              stroke-linecap="round"
-            />
-
-            <!-- highlight -->
-            <ellipse cx="192" cy="73" rx="12" ry="7" fill="#fff5b5" opacity=".65"/>
-            <ellipse cx="130" cy="112" rx="18" ry="10" fill="#fff1a8" opacity=".4"/>
-
-            <!-- cute bow -->
-            <path
-              d="M181 63c-10-8-23-6-28 3 8 1 14 6 18 12-8-2-17 1-20 9 9 3 19 0 25-6 5 7 13 10 22 8-1-8-9-13-18-13 5-4 9-9 10-16-4-1-7-1-9-1z"
-              fill="#f4b5c8"
-            />
-            <circle cx="184" cy="75" r="6" fill="#e892ab"/>
-
-            <!-- bubbles near duck -->
-            <circle cx="84" cy="82" r="8" fill="#ffffff" opacity=".7"/>
-            <circle cx="94" cy="66" r="4" fill="#ffffff" opacity=".7"/>
-            <circle cx="264" cy="54" r="6" fill="#ffffff" opacity=".7"/>
-
-            <!-- tiny heart -->
-            <path
-              d="M104 69c0-5 4-8 8-8 3 0 5 2 6 4 1-2 3-4 6-4 4 0 8 3 8 8 0 8-14 16-14 16s-14-8-14-16z"
-              fill="#f5bfd0"
-            />
-          </svg>
-        </div>
-
-        <h1 class="coming-soon-title">
-          Under construction.<br>
-          <i>Come back soon :)</i>
-        </h1>
-
-        <p class="coming-soon-description">
-          My creative page is still getting fluffed up.
-          Artwork, personal projects, and little creative experiments
-          are on the way.
-        </p>
-
-        <div class="duck-message">
-          🐤 Rubber duck says: cute things are coming soon
-        </div>
-
-        <div class="coming-soon-actions">
-          <a class="coming-soon-button primary" href="index.html">
-            Back to home ↗
+          <a class="coming-soon-link" href="index.html">
+            Back to my story ↗
           </a>
-          <a class="coming-soon-button secondary" href="work.html">
-            View my work ↗
-          </a>
+
         </div>
 
-        <span class="coming-soon-signature">
-          Many chapters. Always Lea.
-        </span>
+        <!-- MONOGRAM -->
+        <div class="coming-soon-monogram"
+             aria-label="LDB, Lea Danitra Bryant">
+
+          <span class="monogram-label">
+            A WORK IN PROGRESS
+          </span>
+
+          <span class="monogram-initials"
+                aria-hidden="true">
+            LDB
+          </span>
+
+          <span class="monogram-divider"
+                aria-hidden="true"></span>
+
+          <span class="monogram-footer">
+            UNDER CONSTRUCTION · COMING SOON
+          </span>
+
+        </div>
+
       </div>
+
     </section>
+
+    <!-- WHAT TO EXPECT -->
+    <section class="creative-preview-section">
+
+      <div class="wrap">
+
+        <div class="creative-preview-heading">
+          <p class="eyebrow">WHAT YOU'LL FIND HERE</p>
+
+          <h2>
+            A space to <i>create freely.</i>
+          </h2>
+        </div>
+
+        <div class="creative-preview-grid">
+
+          <article class="creative-preview-item">
+            <span class="creative-preview-number">01</span>
+            <h3>Photography</h3>
+            <p>
+              Moments, places, and details
+              captured through my own lens.
+            </p>
+          </article>
+
+          <article class="creative-preview-item">
+            <span class="creative-preview-number">02</span>
+            <h3>Art &amp; Design</h3>
+            <p>
+              Personal artwork, digital designs,
+              and ideas brought to life.
+            </p>
+          </article>
+
+          <article class="creative-preview-item">
+            <span class="creative-preview-number">03</span>
+            <h3>Made by Hand</h3>
+            <p>
+              Sewing, handmade projects,
+              textiles, and the joy of making.
+            </p>
+          </article>
+
+          <article class="creative-preview-item">
+            <span class="creative-preview-number">04</span>
+            <h3>Creative Experiments</h3>
+            <p>
+              New skills, unfinished ideas,
+              and projects created just because.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
   </main>
 
+  <!-- CONTACT -->
   <section class="contact" id="contact">
+
     <div class="contact-top">
-      <span class="eyebrow">THE NEXT CHAPTER STARTS WITH A CONVERSATION</span>
-      <span class="contact-location">FRANKLIN / NASHVILLE, TN</span>
+      <span class="eyebrow">
+        THE NEXT CHAPTER STARTS WITH A CONVERSATION
+      </span>
+
+      <span class="contact-location">
+        FRANKLIN / NASHVILLE, TN
+      </span>
     </div>
 
     <div class="contact-body">
-      <h2>Something good<br>starts with <i>hello.</i></h2>
-      <a class="round-arrow" href="mailto:ldbryant3220@gmail.com" aria-label="Email Lea">↗</a>
+      <h2>
+        Something good<br>
+        starts with <i>hello.</i>
+      </h2>
+
+      <a class="round-arrow"
+         href="mailto:ldbryant3220@gmail.com"
+         aria-label="Email Lea">
+        ↗
+      </a>
     </div>
 
     <div class="contact-bottom">
-      <a href="mailto:ldbryant3220@gmail.com">ldbryant3220@gmail.com ↗</a>
+
+      <a href="mailto:ldbryant3220@gmail.com">
+        ldbryant3220@gmail.com ↗
+      </a>
+
       <div>
-        <a href="https://www.linkedin.com/in/leadanitrabryant/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-        <a href="https://github.com/LeaBryant" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/leadanitrabryant/"
+           target="_blank"
+           rel="noopener noreferrer">
+          LinkedIn ↗
+        </a>
+
+        <a href="https://github.com/LeaBryant"
+           target="_blank"
+           rel="noopener noreferrer">
+          GitHub ↗
+        </a>
       </div>
+
     </div>
+
   </section>
 
+  <!-- FOOTER -->
   <footer>
-    <a class="brand" href="index.html">lea<i>danitra</i></a>
+
+    <a class="brand" href="index.html">
+      lea<i>danitra</i>
+    </a>
+
     <span>MANY CHAPTERS. ALWAYS LEA.</span>
-    <span>© <span data-year>2026</span> Lea Danitra Bryant</span>
+
+    <span>
+      © <span data-year>2026</span>
+      Lea Danitra Bryant
+    </span>
+
     <a href="#main">Back to top ↑</a>
+
   </footer>
 
 </body>
