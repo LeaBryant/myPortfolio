@@ -1243,3 +1243,165 @@ img {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+
+/* =====================================
+   HOMEPAGE — CREATIVE COMING SOON
+===================================== */
+
+.home-creative-soon {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr);
+  gap: clamp(30px, 6vw, 85px);
+  align-items: center;
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
+
+/* Small label */
+
+.creative-coming-badge {
+  display: inline-block;
+  background: #F4E3E9;
+  color: #A16F85;
+  padding: 9px 15px;
+  border-radius: 100px;
+  font-size: .67rem;
+  font-weight: 700;
+  letter-spacing: .09em;
+  margin: 10px 0 22px;
+}
+
+.home-creative-soon h2 {
+  margin: 0 0 26px;
+}
+
+.home-creative-soon h2 i {
+  color: #B98098;
+}
+
+.creative-soon-note {
+  color: #A16F85;
+  font-size: .9rem;
+  font-style: italic;
+  margin: 20px 0 28px;
+}
+
+/* Rubber duck card */
+
+.creative-duck-card {
+  position: relative;
+  width: 100%;
+  max-width: 370px;
+  min-width: 0;
+  justify-self: center;
+  overflow: hidden;
+
+  padding: 35px 22px 25px;
+  border-radius: 24px;
+
+  background: #F9EDF0;
+  border: 1px solid #F0DDE3;
+
+  text-align: center;
+}
+
+.home-rubber-duck {
+  display: block;
+  width: min(210px, 72%);
+  height: auto;
+  margin: 0 auto 12px;
+
+  animation: homeDuckFloat 4s ease-in-out infinite;
+}
+
+@keyframes homeDuckFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* Duck message */
+
+.creative-duck-text > span {
+  display: block;
+  font-size: .67rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  color: #A37A87;
+  margin-bottom: 9px;
+}
+
+.creative-duck-text h3 {
+  font-size: clamp(1.35rem, 2.5vw, 1.8rem);
+  color: #344B3C;
+  margin: 0 0 5px;
+}
+
+.creative-duck-text p {
+  color: #B98098;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.creative-duck-bottom {
+  display: block;
+  margin-top: 26px;
+  font-size: .6rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  color: #A98A96;
+}
+
+/* Decorative sparkles */
+
+.creative-card-sparkle {
+  position: absolute;
+  pointer-events: none;
+}
+
+.sparkle-left {
+  top: 45px;
+  left: 30px;
+  color: #D8A6BB;
+  font-size: 30px;
+}
+
+.sparkle-right {
+  top: 80px;
+  right: 28px;
+  color: #A7BDAA;
+  font-size: 26px;
+}
+
+/* Mobile */
+
+@media (max-width: 760px) {
+  .home-creative-soon {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  .creative-duck-card {
+    max-width: 310px;
+    padding: 28px 20px 24px;
+  }
+
+  .home-rubber-duck {
+    width: 185px;
+  }
+}
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+  .home-rubber-duck {
+    animation: none;
+  }
+}
