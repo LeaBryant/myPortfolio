@@ -1,160 +1,675 @@
 
-/*
-  MY WORK — JOURNALISM PHOTO JOURNAL
-  Additional styles for the My Work page.
-  Keep assets/brand.css unchanged.
-*/
+/* =========================================
+   LEA DANITRA — MY WORK PAGE
+   Additional editorial and portfolio styles
+   ========================================= */
 
-/* Section spacing */
 
-.broadcast-story {
-    margin: clamp(3.5rem, 7vw, 6.5rem) 0;
+/* CHAPTER SPACING */
+
+#creativate,
+#dazzle-dry,
+#journalism,
+#coding {
+  scroll-margin-top: 24px;
+}
+
+.work-chapter {
+  padding-top: clamp(65px, 8vw, 110px);
+  padding-bottom: clamp(65px, 8vw, 110px);
+}
+
+.work-chapter .chapter-title {
+  margin-bottom: 35px;
+}
+
+.work-chapter .chapter-intro {
+  max-width: 780px;
+}
+
+.work-gallery figure,
+.broadcast-gallery figure {
+  margin: 0;
+  min-width: 0;
+}
+
+.work-gallery img,
+.broadcast-gallery img {
+  display: block;
+}
+
+
+/* =========================================
+   DAZZLE DRY — PERFORMANCE
+   ========================================= */
+
+#dazzle-dry .results {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+
+  margin-top: 48px;
+  padding: 35px 0;
+
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+#dazzle-dry .results > div {
+  min-width: 0;
+  padding: 8px 12px 12px 0;
+}
+
+#dazzle-dry .results strong {
+  display: block;
+
+  font-family: Georgia, serif;
+  font-size: clamp(34px, 3.3vw, 50px);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.1;
+
+  color: var(--green);
+}
+
+#dazzle-dry .results span {
+  display: block;
+  margin-top: 15px;
+
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+
+  color: var(--ink);
+}
+
+#dazzle-dry .results small {
+  display: block;
+  margin-top: 8px;
+
+  font-size: 10px;
+  line-height: 1.6;
+
+  color: var(--muted);
+}
+
+#dazzle-dry .reporting-note {
+  margin-top: 16px;
+  max-width: 660px;
+
+  font-size: 10px;
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   DAZZLE DRY — FEATURE VIDEO
+   ========================================= */
+
+#dazzle-dry .reel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr);
+  align-items: center;
+  gap: 5%;
+
+  margin-top: 65px;
+  padding: clamp(24px, 4vw, 54px);
+
+  background: var(--sage);
+  border-radius: 10px;
+}
+
+#dazzle-dry .reel-copy {
+  min-width: 0;
+}
+
+#dazzle-dry .reel-copy h3 {
+  margin: 17px 0;
+
+  font-size: clamp(27px, 3vw, 40px);
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+#dazzle-dry .reel-copy p:not(.eyebrow) {
+  max-width: 330px;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+#dazzle-dry .reel-media {
+  min-width: 0;
+}
+
+#dazzle-dry .reel video {
+  display: block;
+
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  max-height: 530px;
+
+  background: #252923;
+  object-fit: contain;
+
+  border-radius: 7px;
+}
+
+
+/* =========================================
+   DAZZLE DRY — GALLERY HEADING
+   ========================================= */
+
+#dazzle-dry .gallery-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 30px;
+
+  margin: 75px 0 30px;
+  padding-bottom: 22px;
+
+  border-bottom: 1px solid var(--line);
+}
+
+#dazzle-dry .gallery-heading h3 {
+  margin-top: 13px;
+
+  font-size: clamp(27px, 3.2vw, 40px);
+  line-height: 1.2;
+}
+
+#dazzle-dry .gallery-heading > p {
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+
+/* =========================================
+   DAZZLE DRY — PHOTOGRAPHY GRID
+   ========================================= */
+
+#dazzle-dry .work-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px 20px;
+  align-items: start;
+}
+
+#dazzle-dry .work-gallery figure {
+  display: flex;
+  flex-direction: column;
+}
+
+#dazzle-dry .work-gallery a {
+  position: relative;
+  display: block;
+  overflow: hidden;
+
+  width: 100%;
+  aspect-ratio: 4 / 3;
+
+  background: var(--sage);
+  border-radius: 7px;
+}
+
+#dazzle-dry .work-gallery img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.35s ease;
+}
+
+#dazzle-dry .work-gallery a:hover img {
+  transform: scale(1.04);
+}
+
+#dazzle-dry .work-gallery a > span {
+  position: absolute;
+  right: 13px;
+  bottom: 13px;
+
+  display: grid;
+  place-items: center;
+
+  width: 35px;
+  height: 35px;
+
+  border-radius: 50%;
+  background: var(--cream);
+  color: var(--green);
+
+  font-size: 20px;
+  line-height: 1;
+}
+
+#dazzle-dry .work-gallery figcaption {
+  margin-top: 13px;
+  min-height: 2.5em;
+
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.6;
+
+  color: var(--ink);
+}
+
+
+/* =========================================
+   JOURNALISM — PHOTO STORY
+   ========================================= */
+
+#journalism .broadcast-story {
+  margin-top: clamp(55px, 7vw, 95px);
+  padding: clamp(28px, 5vw, 60px);
+
+  background: #e7ebdf;
+  border-radius: 12px;
+}
+
+#journalism .broadcast-story-lead {
+  max-width: 680px;
+  margin-bottom: 38px;
+}
+
+#journalism .broadcast-story-lead h3 {
+  margin: 15px 0 20px;
+
+  font-size: clamp(30px, 4vw, 52px);
+  line-height: 1.15;
+  letter-spacing: -1.5px;
+}
+
+#journalism .broadcast-story-lead > p:last-child {
+  max-width: 590px;
+
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+
+/* JOURNALISM PHOTO GRID */
+
+#journalism .broadcast-gallery {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 24px;
+  align-items: start;
+}
+
+#journalism .broadcast-photo {
+  grid-column: span 6;
+  min-width: 0;
+}
+
+#journalism .broadcast-photo--hero {
+  grid-column: span 7;
+}
+
+#journalism .broadcast-photo--camera {
+  grid-column: span 5;
+}
+
+#journalism .broadcast-photo a {
+  position: relative;
+  display: block;
+  overflow: hidden;
+
+  width: 100%;
+  aspect-ratio: 4 / 3;
+
+  background: #d5ddd0;
+  border-radius: 7px;
+}
+
+#journalism .broadcast-photo--hero a {
+  aspect-ratio: 7 / 5;
+}
+
+#journalism .broadcast-photo--camera a {
+  aspect-ratio: 1 / 1;
+}
+
+#journalism .broadcast-photo img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.35s ease;
+}
+
+#journalism .broadcast-photo a:hover img {
+  transform: scale(1.035);
+}
+
+#journalism .broadcast-photo a > span {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+
+  display: grid;
+  place-items: center;
+
+  width: 35px;
+  height: 35px;
+
+  background: var(--cream);
+  color: var(--green);
+  border-radius: 50%;
+
+  font-size: 20px;
+}
+
+#journalism .broadcast-photo figcaption {
+  margin-top: 14px;
+
+  font-size: 13px;
+  line-height: 1.6;
+
+  color: var(--ink);
+}
+
+#journalism .broadcast-photo figcaption span {
+  display: block;
+  margin-bottom: 4px;
+
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+
+  color: var(--green);
+}
+
+
+/* =========================================
+   JOURNALISM — VIDEO SECTION
+   ========================================= */
+
+#journalism .portfolio-subheading {
+  margin-top: 76px;
+  padding-bottom: 20px;
+
+  border-bottom: 1px solid var(--line);
+}
+
+#journalism .portfolio-subheading h3 {
+  margin-top: 13px;
+
+  font-size: clamp(28px, 3.5vw, 42px);
+  line-height: 1.2;
+}
+
+#journalism .video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 45px 27px;
+
+  margin-top: 35px;
+}
+
+#journalism .video-grid article {
+  min-width: 0;
+}
+
+#journalism .video-frame {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+
+  overflow: hidden;
+  background: #222;
+
+  border-radius: 7px;
+}
+
+#journalism .video-frame iframe {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+#journalism .video-grid article > .eyebrow {
+  margin-top: 20px;
+}
+
+#journalism .video-grid h3 {
+  margin: 12px 0 18px;
+
+  font-size: clamp(19px, 2vw, 24px);
+  line-height: 1.35;
+}
+
+
+/* =========================================
+   DEVELOPMENT — PROJECT CARDS
+   ========================================= */
+
+#coding .project-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+
+  margin-top: 40px;
+}
+
+#coding .project-list > a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+
+  min-width: 0;
+  padding: 27px;
+
+  border: 1px solid var(--line);
+  border-radius: 8px;
+
+  background: #fffdf9;
+
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(18px, 2vw, 24px);
+  font-weight: 500;
+  line-height: 1.3;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+#coding .project-list > a:hover {
+  background: var(--sage);
+  border-color: #aabca8;
+  transform: translateY(-2px);
+}
+
+#coding .project-list > a span {
+  min-width: 0;
+}
+
+#coding .project-list small {
+  display: block;
+  margin-top: 12px;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+
+  color: var(--muted);
+}
+
+#coding .project-list b {
+  flex-shrink: 0;
+
+  font-size: 30px;
+  font-weight: 400;
+
+  color: var(--green);
+}
+
+
+/* =========================================
+   TABLET — 900px
+   ========================================= */
+
+@media (max-width: 900px) {
+
+  #dazzle-dry .results {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
   }
-  
-  /* Editorial heading */
-  
-  .broadcast-story-lead {
-    max-width: 45rem;
-    margin-bottom: clamp(1.75rem, 4vw, 3rem);
+
+  #dazzle-dry .reel {
+    grid-template-columns: 1fr;
+    gap: 28px;
   }
-  
-  .broadcast-story-lead h3 {
-    font-size: clamp(2.25rem, 5vw, 4.75rem);
-    line-height: 1.07;
-    letter-spacing: -0.045em;
-    margin: 0.7rem 0 1.1rem;
+
+  #dazzle-dry .work-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  
-  .broadcast-story-lead > p:last-child {
-    font-size: clamp(1rem, 1.45vw, 1.2rem);
-    line-height: 1.7;
-    max-width: 39rem;
+
+  #journalism .broadcast-gallery {
+    gap: 16px;
   }
-  
-  /* Photo gallery */
-  
-  .broadcast-gallery {
-    display: grid;
-    grid-template-columns: 1.15fr 1fr;
-    column-gap: clamp(1rem, 3vw, 2.5rem);
-    row-gap: clamp(2rem, 5vw, 4.5rem);
+
+}
+
+
+/* =========================================
+   MOBILE — 700px
+   ========================================= */
+
+@media (max-width: 700px) {
+
+  .work-chapter {
+    padding-top: 60px;
+    padding-bottom: 65px;
+  }
+
+  .work-chapter .chapter-title {
+    gap: 18px;
+  }
+
+  #dazzle-dry .results {
+    gap: 16px;
+  }
+
+  #dazzle-dry .results strong {
+    font-size: 36px;
+  }
+
+  #dazzle-dry .reel {
+    margin-top: 45px;
+    padding: 26px 19px;
+  }
+
+  #dazzle-dry .gallery-heading {
+    flex-direction: column;
     align-items: start;
+    gap: 14px;
+
+    margin-top: 55px;
   }
-  
-  .broadcast-photo {
-    margin: 0;
-    min-width: 0;
+
+  #dazzle-dry .gallery-heading > p {
+    white-space: normal;
   }
-  
-  /* Image containers */
-  
-  .broadcast-photo .zoom-image {
-    position: relative;
-    display: block;
-    overflow: hidden;
-    border-radius: 6px;
-    background: #ece9e3;
+
+  #dazzle-dry .work-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px 12px;
   }
-  
-  .broadcast-photo .zoom-image img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.45s ease;
-  }
-  
-  /* Hover effect */
-  
-  .broadcast-photo .zoom-image:hover img,
-  .broadcast-photo .zoom-image:focus-visible img {
-    transform: scale(1.025);
-  }
-  
-  /* Image expand arrow */
-  
-  .broadcast-photo .zoom-image > span {
-    position: absolute;
-    right: 1rem;
-    bottom: 1rem;
-    width: 2.2rem;
-    height: 2.2rem;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.92);
-    display: grid;
-    place-items: center;
-    color: #26362d;
-  }
-  
-  /* Editorial captions */
-  
-  .broadcast-photo figcaption {
-    margin-top: 0.75rem;
-    line-height: 1.55;
-    font-size: 0.875rem;
-  }
-  
-  .broadcast-photo figcaption span {
-    display: block;
-    font-size: 0.68rem;
-    letter-spacing: 0.12em;
-    font-weight: 700;
-    margin-bottom: 0.2rem;
-  }
-  
-  /* Asymmetrical photo layout */
-  
-  .broadcast-photo--hero {
-    grid-row: span 2;
-  }
-  
-  .broadcast-photo--hero .zoom-image {
+
+  #dazzle-dry .work-gallery a {
     aspect-ratio: 3 / 4;
   }
-  
-  .broadcast-photo--camera .zoom-image {
+
+  #dazzle-dry .work-gallery figcaption {
+    font-size: 11px;
+  }
+
+  #journalism .broadcast-story {
+    margin-top: 55px;
+    padding: 25px 18px;
+  }
+
+  #journalism .broadcast-gallery {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+
+  #journalism .broadcast-photo,
+  #journalism .broadcast-photo--hero,
+  #journalism .broadcast-photo--camera {
+    grid-column: auto;
+  }
+
+  #journalism .broadcast-photo a,
+  #journalism .broadcast-photo--hero a,
+  #journalism .broadcast-photo--camera a {
     aspect-ratio: 4 / 3;
   }
-  
-  .broadcast-photo--studio .zoom-image {
-    aspect-ratio: 1 / 1;
+
+  #journalism .portfolio-subheading {
+    margin-top: 55px;
   }
-  
-  .broadcast-photo--credential .zoom-image {
+
+  #journalism .video-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  #coding .project-list {
+    grid-template-columns: 1fr;
+  }
+
+  #coding .project-list > a {
+    padding: 23px;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE — 420px
+   ========================================= */
+
+@media (max-width: 420px) {
+
+  #dazzle-dry .work-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  #dazzle-dry .work-gallery a {
     aspect-ratio: 4 / 3;
   }
-  
-  .broadcast-photo--credential .zoom-image img {
-    object-fit: contain;
+
+  #dazzle-dry .results strong {
+    font-size: 34px;
   }
-  
-  /* Mobile layout */
-  
-  @media (max-width: 700px) {
-    .broadcast-gallery {
-      grid-template-columns: 1fr;
-      row-gap: 2rem;
-    }
-  
-    .broadcast-photo--hero {
-      grid-row: auto;
-    }
-  
-    .broadcast-photo--hero .zoom-image {
-      aspect-ratio: 4 / 5;
-    }
-  
-    .broadcast-photo--camera .zoom-image,
-    .broadcast-photo--credential .zoom-image {
-      aspect-ratio: 4 / 3;
-    }
+
+  #journalism .broadcast-story {
+    padding: 22px 15px;
   }
-  
-  /* Accessibility */
-  
-  @media (prefers-reduced-motion: reduce) {
-    .broadcast-photo .zoom-image img {
-      transition: none;
-    }
+
+}
+
+
+/* =========================================
+   REDUCED MOTION
+   ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  #dazzle-dry .work-gallery img,
+  #journalism .broadcast-photo img,
+  #coding .project-list > a {
+    transition: none;
   }
-  
+
+}
